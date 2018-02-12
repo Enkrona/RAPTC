@@ -1,2 +1,0 @@
-print("bork")
-print("jork")

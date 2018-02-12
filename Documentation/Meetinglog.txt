@@ -1,0 +1,3 @@
+1/29: 1 hour, choose project and assign some informal roles
+2/2: 1 hour, first client meeting, get requirements
+2/5: 1 hour, code review and planning next steps
