@@ -12,7 +12,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyProduct("TimeClock")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("EC")]
-[assembly: AssemblyCulture("Great!")]
+//[assembly: AssemblyCulture("Great!")]  //For some reason this was causing the App to not run. Commented out for now 
 
 // Setting ComVisible to false makes the types in this assembly not visible 
 // to COM components.  If you need to access a type in this assembly from 
