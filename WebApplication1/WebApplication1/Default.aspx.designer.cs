@@ -12,5 +12,17 @@ namespace WebApplication1 {
 	
 	
 	public partial class _Default {
+		
+		protected System.Web.UI.HtmlControls.HtmlForm form1;
+		
+		protected System.Web.UI.WebControls.Label lblUsername;
+		
+		protected System.Web.UI.WebControls.TextBox txtUserName;
+		
+		protected System.Web.UI.WebControls.Button btnUserLogin;
+		
+		protected System.Web.UI.WebControls.Label lblError;
+		
+		protected System.Web.UI.WebControls.ImageButton ImageButton1;
 	}
 }
