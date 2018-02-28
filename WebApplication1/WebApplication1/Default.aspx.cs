@@ -45,13 +45,9 @@ namespace WebApplication1
             //UsersDataSetTableAdapters.UserTableAdapter userTableAdapter = new UsersDataSetTableAdapters.UserTableAdapter();
            // DataTable usersDataTable = userTableAdapter.GetUserData();
 
+            // shit for demo
+            Response.Redirect("UserLoginDemo.aspx");
 
-
-        }
-        protected void btnUserLogin_demo(object sender, EventArgs e)
-        {
-            // go to demo login page
-            Response.Redirect("UserDemo.aspx");
         }
         protected void lbtnAdminLogin_Click(object sender, EventArgs e)
         {
