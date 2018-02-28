@@ -48,6 +48,11 @@ namespace WebApplication1
 
 
         }
+        protected void btnUserLogin_demo(object sender, EventArgs e)
+        {
+            // go to demo login page
+            Response.Redirect("UserDemo.aspx");
+        }
         protected void lbtnAdminLogin_Click(object sender, EventArgs e)
         {
             //go to the admin login page

@@ -48,6 +48,7 @@
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
     <Content Include="AdminLogin.aspx" />
+    <Content Include="UserDemo.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Default.aspx.cs">

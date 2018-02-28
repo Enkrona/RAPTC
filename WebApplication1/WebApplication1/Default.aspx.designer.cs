@@ -19,6 +19,10 @@ namespace WebApplication1 {
 		
 		protected System.Web.UI.WebControls.TextBox txtUserName;
 		
+		protected System.Web.UI.WebControls.Label lblPassword;
+		
+		protected System.Web.UI.WebControls.TextBox txtPassword;
+		
 		protected System.Web.UI.WebControls.Button btnUserLogin;
 		
 		protected System.Web.UI.WebControls.Label lblError;
