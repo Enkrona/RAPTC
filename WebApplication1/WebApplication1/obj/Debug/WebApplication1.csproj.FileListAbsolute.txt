@@ -17,13 +17,6 @@ C:/Users/s524063/Source/Repos/RAPTC/WebApplication1/WebApplication1/obj/Debug/We
 /Users/AnthonyEnriquez/Documents/RAPTC/WebApplication1/WebApplication1/obj/Debug/WebApplication1.csproj.CoreCompileInputs.cache
 /Users/AnthonyEnriquez/Documents/RAPTC/WebApplication1/WebApplication1/obj/Debug/WebApplication1.dll
 /Users/AnthonyEnriquez/Documents/RAPTC/WebApplication1/WebApplication1/obj/Debug/WebApplication1.pdb
-C:/Users/s524063/Desktop/RAPTC/WebApplication1/WebApplication1/obj/Debug/WebApplication1.csprojResolveAssemblyReference.cache
-C:/Users/s524063/Desktop/RAPTC/WebApplication1/WebApplication1/obj/Debug/WebApplication1.csproj.CoreCompileInputs.cache
-C:/Users/s524063/Desktop/RAPTC/WebApplication1/WebApplication1/obj/Debug/WebApplication1.dll
-C:/Users/s524063/Desktop/RAPTC/WebApplication1/WebApplication1/obj/Debug/WebApplication1.pdb
-C:/Users/s524063/Desktop/RAPTC/WebApplication1/WebApplication1/bin/WebApplication1.dll.config
-C:/Users/s524063/Desktop/RAPTC/WebApplication1/WebApplication1/bin/WebApplication1.dll
-C:/Users/s524063/Desktop/RAPTC/WebApplication1/WebApplication1/bin/WebApplication1.pdb
 C:/Users/Brad/Documents/GitHub/RAPTC/WebApplication1/WebApplication1/bin/WebApplication1.dll.config
 C:/Users/Brad/Documents/GitHub/RAPTC/WebApplication1/WebApplication1/bin/WebApplication1.dll
 C:/Users/Brad/Documents/GitHub/RAPTC/WebApplication1/WebApplication1/bin/WebApplication1.pdb
@@ -37,3 +30,9 @@ C:/Users/Brad/Documents/GitHub/RAPTC/WebApplication1/WebApplication1/obj/Debug/W
 /Users/AnthonyEnriquez/Time Clock/RAPTC/WebApplication1/WebApplication1/obj/Debug/WebApplication1.csproj.CoreCompileInputs.cache
 /Users/AnthonyEnriquez/Time Clock/RAPTC/WebApplication1/WebApplication1/obj/Debug/WebApplication1.dll
 /Users/AnthonyEnriquez/Time Clock/RAPTC/WebApplication1/WebApplication1/obj/Debug/WebApplication1.pdb
+C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
