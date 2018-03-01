@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Cite.DomainAuthentication;
 
 namespace WebApplication1
 {
@@ -19,6 +20,15 @@ namespace WebApplication1
             string adminID = txtAdminUserName.Text.ToString();
 
             string password = txtAdminPass.Text.ToString();
+
+            //Basic Cite.DomainAuthentication use
+            DomainAccount d = new DomainAccount(adminID);
+            Boolean admin = false;
+            if (d.OU == OrganizationalUnit.FacultyUsers || d.OU == OrganizationalUnit.StaffUsers)
+            {
+                admin = true;
+            }
+
 
             //log the user in, if this user id exists within the database
             //UsersDataSetTableAdapters.UserTableAdapter userTableAdapter = new UsersDataSetTableAdapters.UserTableAdapter();
