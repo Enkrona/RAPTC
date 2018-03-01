@@ -13,5 +13,27 @@ namespace WebApplication1
         {
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            string adminID = txtAdminUserName.Text.ToString();
+
+            string password = txtAdminPass.Text.ToString();
+
+            //log the user in, if this user id exists within the database
+            //UsersDataSetTableAdapters.UserTableAdapter userTableAdapter = new UsersDataSetTableAdapters.UserTableAdapter();
+            // DataTable usersDataTable = userTableAdapter.GetUserData();
+
+            // just a basic demo login to display an admin login page  
+            if (adminID.Equals("demo") && password.Equals("password"))
+            {
+                Response.Redirect("Admin.aspx");
+            }
+            else
+            {
+                Response.Redirect("LoginFailure.aspx");
+            }
+        }
+
     }
 }
