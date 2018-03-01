@@ -42,14 +42,16 @@ namespace WebApplication1
         {
             //get the username from the username text box
 
-            string userID = txtUserName.Value.ToString();
+            string userID = txtUserName.Text.ToString();
+
+            string password = txtPassword.Text.ToString();
 
             //log the user in, if this user id exists within the database
             //UsersDataSetTableAdapters.UserTableAdapter userTableAdapter = new UsersDataSetTableAdapters.UserTableAdapter();
             // DataTable usersDataTable = userTableAdapter.GetUserData();
 
             // Redirect for demo 
-            if (userID.Equals("demo"))
+            if (userID.Equals("demo") && password.Equals("password"))
             {
                 Response.Redirect("InputTime.aspx");
             }
@@ -57,6 +59,8 @@ namespace WebApplication1
             {
                 Response.Redirect("UserLoginDemo.aspx");
             }
+
+
 
         }
         protected void lbtnAdminLogin_Click(object sender, EventArgs e)

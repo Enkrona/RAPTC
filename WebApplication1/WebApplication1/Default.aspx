@@ -47,9 +47,9 @@
     <form id="form1" runat="server">
         <br />
         <br />
-        <asp:Label ID="lblUsername" runat="server" Text="Username:"></asp:Label>&nbsp;
+        <asp:Label ID="lblUsername" runat="server" Text="S#:"></asp:Label>&nbsp;
        
-         <input type="text" id="txtUserName" runat="server" Width="214px" />
+         <asp:TextBox ID="txtUserName" runat="server" Width="214px"> </asp:TextBox>
          <br />
         <asp:Label ID="lblPassword" runat="server" Text="Password:"></asp:Label>&nbsp;&nbsp;
         <asp:TextBox ID="txtPassword" TextMode="Password" runat="server" Width="214px"></asp:TextBox><br />
