@@ -17,7 +17,7 @@ namespace WebApplication1 {
 		
 		protected System.Web.UI.WebControls.Label lblUsername;
 		
-		protected System.Web.UI.WebControls.TextBox txtUserName;
+		protected System.Web.UI.HtmlControls.HtmlInputText txtUserName;
 		
 		protected System.Web.UI.WebControls.Label lblPassword;
 		

@@ -11,6 +11,8 @@ namespace WebApplication1
 {
     public partial class _Default : Page
     {
+        //string user = this.UserName;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             //check to make sure the program has been activated on this machine
@@ -39,14 +41,22 @@ namespace WebApplication1
         protected void btnUserLogin_Click(object sender, EventArgs e)
         {
             //get the username from the username text box
-            string userID = txtUserName.Text.ToLower();
+
+            string userID = txtUserName.Value.ToString();
 
             //log the user in, if this user id exists within the database
             //UsersDataSetTableAdapters.UserTableAdapter userTableAdapter = new UsersDataSetTableAdapters.UserTableAdapter();
-           // DataTable usersDataTable = userTableAdapter.GetUserData();
+            // DataTable usersDataTable = userTableAdapter.GetUserData();
 
-            // Redirect for demo
-            Response.Redirect("UserLoginDemo.aspx");
+            // Redirect for demo 
+            if (userID.Equals("demo"))
+            {
+                Response.Redirect("InputTime.aspx");
+            }
+            else 
+            {
+                Response.Redirect("UserLoginDemo.aspx");
+            }
 
         }
         protected void lbtnAdminLogin_Click(object sender, EventArgs e)
@@ -59,5 +69,6 @@ namespace WebApplication1
         {
             //lblTime.Text = DateTime.Now.ToString();
         }
+
     }
 }
