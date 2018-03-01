@@ -24,3 +24,10 @@ C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebAppl
 C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
 C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\bin\WebApplication1.dll
 C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Users\Brad\Documents\GitHub\RAPTC\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\Brad\Documents\GitHub\RAPTC\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\Users\Brad\Documents\GitHub\RAPTC\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Users\Brad\Documents\GitHub\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Brad\Documents\GitHub\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Users\Brad\Documents\GitHub\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\Brad\Documents\GitHub\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb

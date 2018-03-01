@@ -33,28 +33,34 @@
             }
 
         </script>
+        <style type="text/css">
+            #clock {
+                width: 921px;
+            }
+        </style>
     </head>
-    <body onload="updateClock(); setInterval(&#39;updateClock()&#39;, 1000 )">
+    <body onload="updateClock(); setInterval(&#39;updateClock()&#39;, 1000 )" bgcolor="#006747">
         <h1> 
-            Welcome to the X106 Student Employee and Practicum Timeclock Application
+            <font color="white" font-family="Futara"> Welcome to the X106 Radio and Practicum Time Clock (RAPTC)</font>
         </h1>
-        <font size="20" > <p id="clock">10:15:23 AM</p> </font>
+        <img src="logo.png" align="right" height="400" width="800" />
         <div id="date">
-            <font size="20" > <p><script> document.write(new Date().toLocaleDateString()); </script></p> </font>
         </div>
-        <div id="container">
+        <div id="container"> 
+            <font size="20" color="white" > <p id="clock">10:15:23 AM</p> 
+            <p style="width: 317px"><script> document.write(new Date().toLocaleDateString()); </script></p> </font> </div>
     <div id="hold">
     <form id="form1" runat="server">
         <br />
         <br />
-        <asp:Label ID="lblUsername" runat="server" Text="S#:"></asp:Label>&nbsp;
-       
-         <asp:TextBox ID="txtUserName" runat="server" Width="214px"> </asp:TextBox>
+        &nbsp;<asp:Label ID="lblUsername" runat="server" ForeColor="White" Text="S#:"></asp:Label>&nbsp;<asp:TextBox ID="txtUserName" runat="server" Width="214px" style="margin-left: 49px"></asp:TextBox>
          <br />
-        <asp:Label ID="lblPassword" runat="server" Text="Password:"></asp:Label>&nbsp;&nbsp;
-        <asp:TextBox ID="txtPassword" TextMode="Password" runat="server" Width="214px"></asp:TextBox><br />
-         <br />&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
-        <asp:Button ID="btnUserLogin" runat="server" Text="Submit" OnClick="btnUserLogin_Click" Width="130px" />
+        <br />
+         <br />
+        <asp:Label ID="lblPassword" runat="server" ForeColor="White" Text="Password:"></asp:Label>&nbsp;&nbsp;
+        <asp:TextBox ID="txtPassword" TextMode="Password" runat="server" Width="214px" Height="22px"></asp:TextBox><br />
+         <br />&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<asp:Button ID="btnUserLogin" runat="server" Text="Submit" OnClick="btnUserLogin_Click" Width="130px" />
+         &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
          <br />
          <br />
         <p>
@@ -66,6 +72,8 @@
       </form>
         </div> 
     </div> 
+        <p>
+            &nbsp;</p>
     </body>
 
 </html>
