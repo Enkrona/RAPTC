@@ -1,17 +1,11 @@
 ﻿<Properties StartupConfiguration="{03C422B9-4FDF-4E89-8B1B-E3132219D996}|">
-  <MonoDevelop.Ide.Workbench>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="WebApplication1" expanded="True">
-            <Node name="WebApplication1" expanded="True">
-              <Node name="AdminLogin.aspx" selected="True" />
-              <Node name="Default.aspx" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebApplication1/Default.aspx.cs">
+    <Files>
+      <File FileName="WebApplication1/UserLoginDemo.aspx" Line="7" Column="5" />
+      <File FileName="WebApplication1/InputTime.aspx" Line="6" Column="36" />
+      <File FileName="WebApplication1/Default.aspx" Line="44" Column="15" />
+      <File FileName="WebApplication1/Default.aspx.cs" Line="48" Column="20" />
+    </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

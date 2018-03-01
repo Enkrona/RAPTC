@@ -48,7 +48,7 @@
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
     <Content Include="AdminLogin.aspx" />
-    <Content Include="UserDemo.aspx" />
+    <Content Include="InputTime.aspx" />
     <Content Include="UserLoginDemo.aspx" />
   </ItemGroup>
   <ItemGroup>

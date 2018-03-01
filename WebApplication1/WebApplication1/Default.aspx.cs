@@ -45,7 +45,7 @@ namespace WebApplication1
             //UsersDataSetTableAdapters.UserTableAdapter userTableAdapter = new UsersDataSetTableAdapters.UserTableAdapter();
            // DataTable usersDataTable = userTableAdapter.GetUserData();
 
-            // shit for demo
+            // Redirect for demo
             Response.Redirect("UserLoginDemo.aspx");
 
         }

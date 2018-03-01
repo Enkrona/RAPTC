@@ -3,7 +3,7 @@
 <html>
 <body>
     <form id="form1" runat="server">
-    <p> This is a test landing page for demo</p> 
+    <p> This is a test user profile for demo</p> 
     </form>
 </body>
 </html>
