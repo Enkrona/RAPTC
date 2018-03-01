@@ -60,7 +60,7 @@
          <br />
         <asp:Label ID="lblPassword" runat="server" ForeColor="White" Text="Password:"></asp:Label>&nbsp;&nbsp;
         <asp:TextBox ID="txtPassword" TextMode="Password" runat="server" Width="214px" Height="22px"></asp:TextBox><br />
-         <br />&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<asp:Button ID="btnUserLogin" runat="server" Text="Submit" OnClick="btnUserLogin_Click" Width="130px" />
+         <br />&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<asp:Button ID="btnUserLogin" runat="server" Text="Login" OnClick="btnUserLogin_Click" Width="130px" />
          &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
          <br />
          <br />
