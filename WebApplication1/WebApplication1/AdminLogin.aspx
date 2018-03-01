@@ -1,4 +1,6 @@
-﻿<%@ Page Language="C#" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AdminLogin.aspx.cs" Inherits="WebApplication1.AdminLogin1" %>
+
+
 <!DOCTYPE html>
 <html>
 <head runat="server">
