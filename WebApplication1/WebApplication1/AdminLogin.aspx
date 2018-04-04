@@ -6,8 +6,12 @@
 <head runat="server">
 	<title>AdminLogin</title>
 	<script runat="server">
-	
-	</script>
+
+		protected void txtAdminUserName_TextChanged(object sender, EventArgs e)
+		{
+
+		}
+</script>
     <style type="text/css">
         #form1 {
             height: 255px;
@@ -19,7 +23,7 @@
 	<font color="white"><p> This is a test landing page for an admin</p></font>
         <p> &nbsp;</p> 
 	    <font color="white">Admin Credentials:</font>
-        <asp:TextBox ID="txtAdminUserName" runat="server" Width="214px" ></asp:TextBox>
+        <asp:TextBox ID="txtAdminUserName" runat="server" Width="214px" OnTextChanged="txtAdminUserName_TextChanged" ></asp:TextBox>
         <br />
         <br />
         <font color="white">Admin Password:</font>

@@ -1,5 +1,19 @@
 ﻿<%@ Page Title="Home Page" Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="WebApplication1._Default" %>
 
+<script runat="server">
+
+	protected void txtUserName_TextChanged(object sender, EventArgs e)
+	{
+
+	}
+
+	protected void Page_Load(object sender, EventArgs e)
+	{
+
+	}
+</script>
+
+
 <html>
     <head> 
         <script type="text/javascript">
@@ -54,13 +68,13 @@
     <form id="form1" runat="server">
         <br />
         <br />
-        &nbsp;<asp:Label ID="lblUsername" runat="server" ForeColor="White" Text="919#:"></asp:Label>&nbsp;<asp:TextBox ID="txtUserName" runat="server" Width="214px" style="margin-left: 49px"></asp:TextBox>
+        &nbsp;<asp:Label ID="lblUsername" runat="server" ForeColor="White" Text="919#:"></asp:Label>&nbsp;<asp:TextBox ID="txtUserName" runat="server" Width="214px" style="margin-left: 49px" OnTextChanged="txtUserName_TextChanged"></asp:TextBox>
          <br />
         <br />
          <br />
-        <asp:Label ID="lblPassword" runat="server" ForeColor="White" Text="Password:"></asp:Label>&nbsp;&nbsp;
+        <asp:Label ID="lblPassword" runat="server" ForeColor="White" Text="Password:"></asp:Label>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
         <asp:TextBox ID="txtPassword" TextMode="Password" runat="server" Width="214px" Height="22px"></asp:TextBox><br />
-         <br />&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<asp:Button ID="btnUserLogin" runat="server" Text="Login" OnClick="btnUserLogin_Click" Width="130px" />
+         <br />&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &ensp;&ensp;<asp:Button ID="btnUserLogin" runat="server" Text="Login" OnClick="btnUserLogin_Click" Width="130px" />
          &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
          <br />
          <br />

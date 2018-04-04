@@ -50,6 +50,14 @@ namespace WebApplication1
             //UsersDataSetTableAdapters.UserTableAdapter userTableAdapter = new UsersDataSetTableAdapters.UserTableAdapter();
             // DataTable usersDataTable = userTableAdapter.GetUserData();
 
+            if (adminID.Equals("admin") && password.Equals("pass"))
+            {
+                Response.Redirect("Admin.aspx");
+            }
+            else
+            {
+                Response.Redirect("LoginFailure.aspx");
+            }
             // Redirect for demo 
             if (userID.Equals("demo") && password.Equals("password"))
             {

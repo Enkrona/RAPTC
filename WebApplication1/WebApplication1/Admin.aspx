@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <script runat="server">
 
-	protected void TextBox1_TextChanged(object sender, EventArgs e)
+	protected void Page_Load(object sender, EventArgs e)
 	{
 
 	}
@@ -12,15 +12,101 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Admin Page</title>
+	<style type="text/css">
+		#form1 {
+			height: 586px;
+			width: 405px;
+			float: left;
+		}
+		#form2 {
+			width: 1020px;
+			margin-left: 436px;
+			margin-right: 362px;
+			margin-top: 0px;
+			height: 582px;
+			margin-bottom: 3px;
+		}
+		.auto-style1 {
+			height: 25px;
+			font-size: x-large;
+			width: 385px;
+			margin-left: 5px;
+		}
+		
+		.auto-style2 {
+			font-size: xx-large;
+		}
+		
+		</style>
 </head>
 <body bgcolor="#006747">
+    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<h1 class="auto-style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Admin</h1>
     <form id="form1" runat="server">
         <div>
-           <font color="white"> <p align="center"> This page is a place-holder for an admin view</p> </font>
+        	<p class="auto-style1">
+				Generated data table displays students&nbsp; shift date, time, and clockin times.&nbsp;&nbsp; </p>
+			
         </div>
-    	<asp:Button ID="Button1" runat="server" Text="Button" />
-		<asp:TextBox ID="TextBox1" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
-    &nbsp;&nbsp;&nbsp; looks good?</form>
+		<asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Height="492px" style="margin-left: 6px; margin-top: 33px" Width="374px">
+			<AlternatingRowStyle BackColor="White" />
+			<Columns>
+				<asp:BoundField />
+			</Columns>
+			<EditRowStyle BackColor="#7C6F57" />
+			<FooterStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
+			<HeaderStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
+			<PagerStyle BackColor="#666666" ForeColor="White" HorizontalAlign="Center" />
+			<RowStyle BackColor="#E3EAEB" />
+			<SelectedRowStyle BackColor="#C5BBAF" Font-Bold="True" ForeColor="#333333" />
+			<SortedAscendingCellStyle BackColor="#F8FAFA" />
+			<SortedAscendingHeaderStyle BackColor="#246B61" />
+			<SortedDescendingCellStyle BackColor="#D4DFE1" />
+			<SortedDescendingHeaderStyle BackColor="#15524A" />
+		</asp:GridView>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	</form>
+		<form id ="form2" runat="server">
+			<img src="logo.png" align="right" style="height: 578px; width: 699px; margin-left: 4px; float: left;" />
+		<br />
+	
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+	
+		<br />
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+&nbsp;<asp:TextBox ID="TextBox1" runat="server" Height="31px" Width="277px"></asp:TextBox>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		
+		<br />
+&nbsp;<asp:Button ID="Button1" runat="server" Text="Add User" Width="84px" />
+		&nbsp;&nbsp;&nbsp;
+		<asp:Button ID="Button2" runat="server" Text="Remove User" Width="84px" />
+&nbsp;&nbsp;&nbsp;
+		<asp:Button ID="Button3" runat="server" Text="Edit User" Width="84px" />
+		<br />
+
+	</form>
 </body>
 </html>

@@ -37,3 +37,10 @@ C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebAppl
 C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
 C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+C:\RAPTC\RAPTC\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\RAPTC\RAPTC\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\RAPTC\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+C:\RAPTC\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+C:\RAPTC\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
+C:\RAPTC\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\RAPTC\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
