@@ -44,3 +44,11 @@ C:/RAPTC/RAPTC/WebApplication1/WebApplication1/obj/Debug/WebApplication1.csproj.
 C:/RAPTC/RAPTC/WebApplication1/WebApplication1/obj/Debug/WebApplication1.csproj.CopyComplete
 C:/RAPTC/RAPTC/WebApplication1/WebApplication1/obj/Debug/WebApplication1.dll
 C:/RAPTC/RAPTC/WebApplication1/WebApplication1/obj/Debug/WebApplication1.pdb
+C:\Users\Bradley\Documents\RAPTC\RAPTC\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\Bradley\Documents\RAPTC\RAPTC\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\Users\Bradley\Documents\RAPTC\RAPTC\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Users\Bradley\Documents\RAPTC\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Bradley\Documents\RAPTC\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Users\Bradley\Documents\RAPTC\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
+C:\Users\Bradley\Documents\RAPTC\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\Bradley\Documents\RAPTC\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
