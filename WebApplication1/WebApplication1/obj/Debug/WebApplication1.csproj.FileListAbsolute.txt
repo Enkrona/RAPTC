@@ -51,3 +51,4 @@ C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\bin\WebApplicatio
 C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
 C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
