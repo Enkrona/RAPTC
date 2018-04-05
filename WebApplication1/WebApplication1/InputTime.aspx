@@ -1,4 +1,5 @@
-﻿<%@ Page Language="C#" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="InputTime.aspx.cs" Inherits="WebApplication1.InputTime" %>
+
 <!DOCTYPE html>
 <html>
 <body bgcolor="#006747">

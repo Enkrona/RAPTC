@@ -22,11 +22,22 @@ namespace WebApplication1
             string password = txtAdminPass.Text.ToString();
 
             //Basic Cite.DomainAuthentication use
-            DomainAccount d = new DomainAccount(adminID);
-            Boolean admin = false;
-            if (d.OU == OrganizationalUnit.FacultyUsers || d.OU == OrganizationalUnit.StaffUsers)
+            try
             {
-                admin = true;
+                DomainAccount d = new DomainAccount(adminID);
+                Boolean admin = false;
+                if (d.OU == OrganizationalUnit.FacultyUsers || d.OU == OrganizationalUnit.StaffUsers)
+                {
+                    admin = true;
+                } 
+                else if (d.OU == OrganizationalUnit.StudentUsers)
+                {
+                    Response.Redirect("~/default.aspx");
+                }
+            }
+            catch (Exception ex)
+            {
+
             }
 
 
