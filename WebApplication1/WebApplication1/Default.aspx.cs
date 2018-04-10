@@ -18,6 +18,10 @@ namespace WebApplication1
             //check to make sure the program has been activated on this machine
             string activatedCookie = "";
 
+            //*****************PRELIM COOKIE CHECK: DELETE EVENTUALLY**********************
+            Request.Cookies["ApplicationActivated"].Value = "Activated";
+            //*****************************************************************************
+
             try
             {
                 //attempt to retrieve the activated cookie
@@ -25,7 +29,7 @@ namespace WebApplication1
             }
             catch
             {
-
+                Response.Redirect("~/Verify.aspx");
             }
 
             //if the cookies value is not equal to Activated redirect to the activation page

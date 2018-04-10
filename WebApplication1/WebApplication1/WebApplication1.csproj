@@ -50,6 +50,7 @@
     <Content Include="FCCLog.aspx" />
     <Content Include="Global.asax" />
     <Content Include="InputTime.aspx" />
+    <Content Include="Verify.aspx" />
     <Content Include="Web.config" />
     <Content Include="LoginFailure.aspx" />
   </ItemGroup>
@@ -99,6 +100,13 @@
     </Compile>
     <Compile Include="LoginFailure.aspx.designer.cs">
       <DependentUpon>LoginFailure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Verify.aspx.cs">
+      <DependentUpon>Verify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Verify.aspx.designer.cs">
+      <DependentUpon>Verify.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
