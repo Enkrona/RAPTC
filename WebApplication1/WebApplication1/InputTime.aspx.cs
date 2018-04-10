@@ -19,7 +19,8 @@ namespace WebApplication1
             }
             catch (Exception ex)
             {
-                Clocked = "in";
+                Clocked = "out";
+                Session["ClockedIn"] = "out";
             }
         }
 
@@ -27,12 +28,13 @@ namespace WebApplication1
         {
             if (Clocked == "in")
             {
-                Clock.Text = "Clock out";
-                Session["ClockedIn"] = "out";
-            } else
-            {
                 Clock.Text = "Clock in";
-                Session["ClockedOut"] = "in";
+                Session["ClockedIn"] = "out";
+            }
+            else if (Clocked == "out")
+            {
+                Clock.Text = "Clock out";
+                Session["ClockedIn"] = "in";
             }
         }
     }

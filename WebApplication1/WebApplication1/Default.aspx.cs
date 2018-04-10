@@ -63,9 +63,6 @@ namespace WebApplication1
             {
                 Response.Redirect("LoginFailure.aspx");
             }
-
-
-
         }
         protected void lbtnAdminLogin_Click(object sender, EventArgs e)
         {
