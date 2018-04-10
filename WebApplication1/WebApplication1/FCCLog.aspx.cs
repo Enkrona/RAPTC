@@ -13,6 +13,21 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //check if application is verified on current computer
+            try
+            {
+                String activated = Response.Cookies["ApplicationActivated"].Value;
+
+                if (activated != "activated")
+                {
+                    Response.Redirect("~/Verify.aspx");
+                }
+            }
+            catch (Exception ex)
+            {
+                Response.Redirect("~/Verify.aspx");
+            }
+
             try
             {
                 XmlReader xmlFile;

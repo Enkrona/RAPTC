@@ -13,6 +13,22 @@ namespace WebApplication1
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            //check if current computer is verified for use of application
+            try
+            {
+                String activated = Response.Cookies["ApplicationActivated"].Value;
+
+                if (activated != "activated")
+                {
+                    Response.Redirect("~/Verify.aspx");
+                }
+            }
+            catch (Exception ex)
+            {
+                Response.Redirect("~/Verify.aspx");
+            }
+
+
             try
             {
                 var Clocked = Session["ClockedIn"].ToString().Split(' ');

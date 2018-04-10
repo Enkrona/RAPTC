@@ -35,7 +35,7 @@ namespace WebApplication1
             //if the cookies value is not equal to Activated redirect to the activation page
             if (activatedCookie != "Activated")
             {
-                //Response.Redirect("Default.aspx");
+                Response.Redirect("Verify.aspx");
             }
 
             //lblTime.Text = DateTime.Now.ToString();
