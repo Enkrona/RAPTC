@@ -42,11 +42,14 @@
     </head>
 <body onload="updateClock(); setInterval(&#39;updateClock()&#39;, 1000 )" bgcolor="#006747">
 
+    <form id="form1" runat="server">
+
      <div id="container"> 
             <font size="20" color="white" > <p id="clock">10:15:23 AM</p> 
-            <p style="width: 317px"><script> document.write(new Date().toLocaleDateString()); </script></p> </font> </div>
+            <p style="width: 317px"><script> document.write(new Date().toLocaleDateString()); </script></p> 
+            <asp:Label ID="ClockedinTime" runat="server" style="z-index: 1; left: 351px; top: 109px; position: absolute"></asp:Label>
+            </font> </div>
 
-    <form id="form1" runat="server">
     <font color="white"><p> This is a test user profile for demo</p></font>
         <img src="genericprofile.png" style="margin-right: 0px" height="200" width="200" />
         <asp:Button ID="Clock" runat="server" OnClick="Button1_Click" style="z-index: 1; left: 214px; top: 227px; position: absolute" Text="ClockIn" />

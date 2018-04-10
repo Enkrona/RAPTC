@@ -15,26 +15,41 @@ namespace WebApplication1
         {
             try
             {
-                Clocked = Session["ClockedIn"].ToString();
+                var Clocked = Session["ClockedIn"].ToString().Split(' ');
             }
             catch (Exception ex)
             {
-                Clocked = "out";
-                Session["ClockedIn"] = "out";
+                Session["ClockedIn"] = "NA " + DateTime.Now.ToString();
             }
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            if (Clocked == "in")
+            var Clocked = Session["ClockedIn"].ToString().Split(' ');
+            DateTime ClockTime = DateTime.Now;
+
+            if (Clocked[0] == "NA")
+            {
+                Session["ClockedIn"] = "in " + ClockTime.ToString();
+                Clock.Text = "Clock out";
+                ClockedinTime.Text = "You clocked in at " + ClockTime.ToLongTimeString();
+            }
+
+            else if (Clocked[0] == "in")
             {
                 Clock.Text = "Clock in";
-                Session["ClockedIn"] = "out";
+                DateTime inTime = Convert.ToDateTime(Clocked[1] + " " + Clocked[2]);
+                DateTime outTime = DateTime.Now;
+                TimeSpan difference = outTime - inTime;
+                ClockedinTime.Text = "You worked " + difference.ToString();
+                Session["ClockedIn"] = "out " + ClockTime.ToString();
+
             }
-            else if (Clocked == "out")
+            else if (Clocked[0] == "out")
             {
                 Clock.Text = "Clock out";
-                Session["ClockedIn"] = "in";
+                Session["ClockedIn"] = "in " + ClockTime.ToString();
+                ClockedinTime.Text = "You clocked in at " + ClockTime.ToLongTimeString();
             }
         }
     }
