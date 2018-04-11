@@ -16,7 +16,7 @@ namespace WebApplication1
             //check if application is verified on current computer
             try
             {
-                String activated = Response.Cookies["ApplicationActivated"].Value;
+                String activated = Request.Cookies["ApplicationActivated"].Value;
 
                 if (activated != "activated")
                 {

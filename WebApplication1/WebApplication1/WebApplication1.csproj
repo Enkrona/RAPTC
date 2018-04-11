@@ -50,8 +50,12 @@
     <Content Include="FCCLog.aspx" />
     <Content Include="Global.asax" />
     <Content Include="InputTime.aspx" />
+    <Content Include="UserLanding.aspx" />
+    <Content Include="UserReport.aspx" />
     <Content Include="Verify.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="LoginFailure.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -101,6 +105,20 @@
     <Compile Include="LoginFailure.aspx.designer.cs">
       <DependentUpon>LoginFailure.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UserLanding.aspx.cs">
+      <DependentUpon>UserLanding.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLanding.aspx.designer.cs">
+      <DependentUpon>UserLanding.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserReport.aspx.cs">
+      <DependentUpon>UserReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserReport.aspx.designer.cs">
+      <DependentUpon>UserReport.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Verify.aspx.cs">
       <DependentUpon>Verify.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -129,11 +147,34 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Cite.DomainAuthentication.dll</HintPath>
     </Reference>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Entity.Design" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Entity" />
     <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

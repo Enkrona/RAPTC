@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="webtimeclock_radioModelStoreContainer" CdmEntityContainer="webtimeclock_radioEntities1">
+    <EntitySetMapping Name="events">
+      <EntityTypeMapping TypeName="webtimeclock_radioModel.event">
+        <MappingFragment StoreEntitySet="events">
+          <ScalarProperty Name="EventID" ColumnName="EventID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="In" ColumnName="In" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="fccs">
+      <EntityTypeMapping TypeName="webtimeclock_radioModel.fcc">
+        <MappingFragment StoreEntitySet="fcc">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ShiftID" ColumnName="ShiftID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="shifts">
+      <EntityTypeMapping TypeName="webtimeclock_radioModel.shift">
+        <MappingFragment StoreEntitySet="shifts">
+          <ScalarProperty Name="ShiftID" ColumnName="ShiftID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="TimeIn" ColumnName="TimeIn" />
+          <ScalarProperty Name="TimeOut" ColumnName="TimeOut" />
+          <ScalarProperty Name="TimeWorked" ColumnName="TimeWorked" />
+          <ScalarProperty Name="RoundedTimeWorked" ColumnName="RoundedTimeWorked" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="webtimeclock_radioModel.user">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

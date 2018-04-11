@@ -19,7 +19,7 @@ namespace WebApplication1
             string activatedCookie = "";
 
             //*****************PRELIM COOKIE CHECK: DELETE EVENTUALLY**********************
-            Request.Cookies["ApplicationActivated"].Value = "Activated";
+            //Request.Cookies["ApplicationActivated"].Value = "activated";
             //*****************************************************************************
 
             try
@@ -35,7 +35,7 @@ namespace WebApplication1
             //if the cookies value is not equal to Activated redirect to the activation page
             if (activatedCookie != "Activated")
             {
-                Response.Redirect("Verify.aspx");
+                Response.Redirect("~/Verify.aspx");
             }
 
             //lblTime.Text = DateTime.Now.ToString();
@@ -56,22 +56,22 @@ namespace WebApplication1
 
             if (userID.Equals("admin") && password.Equals("pass"))
             {
-                Response.Redirect("Admin.aspx");
+                Response.Redirect("~/Admin.aspx");
             }
             // Redirect for demo 
             else if(userID.Equals("demo") && password.Equals("password"))
             {
-                Response.Redirect("InputTime.aspx");
+                Response.Redirect("~/InputTime.aspx");
             }
             else 
             {
-                Response.Redirect("LoginFailure.aspx");
+                Response.Redirect("~/LoginFailure.aspx");
             }
         }
         protected void lbtnAdminLogin_Click(object sender, EventArgs e)
         {
             //go to the admin login page
-            Response.Redirect("AdminLogin.aspx");
+            Response.Redirect("~/AdminLogin.aspx");
         }
 
         protected void Timer1_Tick(object sender, EventArgs e)

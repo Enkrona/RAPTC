@@ -14,7 +14,7 @@ namespace WebApplication1
         {
             try
             {
-                String activated = Response.Cookies["ApplicationActivated"].Value;
+                String activated = Request.Cookies["ApplicationActivated"].Value;
 
                 if (activated != "activated")
                 {

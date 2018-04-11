@@ -52,3 +52,5 @@ C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebAppl
 C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
 C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\bin\EntityFramework.dll
+C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\bin\EntityFramework.xml

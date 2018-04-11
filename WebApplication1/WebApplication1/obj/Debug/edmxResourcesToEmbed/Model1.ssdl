@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="webtimeclock_radioModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.7" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="events">
+    <Key>
+      <PropertyRef Name="EventID" />
+    </Key>
+    <Property Name="EventID" Type="int" Nullable="false" />
+    <Property Name="UserID" Type="int" />
+    <Property Name="Time" Type="timestamp" Precision="0" />
+    <Property Name="In" Type="int" />
+  </EntityType>
+  <EntityType Name="fcc">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="UserID" Type="int" />
+    <Property Name="ShiftID" Type="int" />
+    <Property Name="Date" Type="date" />
+    <Property Name="Code" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="shifts">
+    <Key>
+      <PropertyRef Name="ShiftID" />
+    </Key>
+    <Property Name="ShiftID" Type="int" Nullable="false" />
+    <Property Name="UserID" Type="int" />
+    <Property Name="Date" Type="date" />
+    <Property Name="TimeIn" Type="timestamp" Precision="0" />
+    <Property Name="TimeOut" Type="timestamp" Precision="0" />
+    <Property Name="TimeWorked" Type="time" Precision="0" />
+    <Property Name="RoundedTimeWorked" Type="time" Precision="0" />
+    <Property Name="Comments" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="users">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="45" />
+    <Property Name="LastName" Type="varchar" MaxLength="45" />
+    <Property Name="Role" Type="int" />
+  </EntityType>
+  <EntityContainer Name="webtimeclock_radioModelStoreContainer">
+    <EntitySet Name="events" EntityType="Self.events" Schema="webtimeclock_radio" store:Type="Tables" />
+    <EntitySet Name="fcc" EntityType="Self.fcc" Schema="webtimeclock_radio" store:Type="Tables" />
+    <EntitySet Name="shifts" EntityType="Self.shifts" Schema="webtimeclock_radio" store:Type="Tables" />
+    <EntitySet Name="users" EntityType="Self.users" Schema="webtimeclock_radio" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

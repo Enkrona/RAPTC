@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="webtimeclock_radioModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="event">
+    <Key>
+      <PropertyRef Name="EventID" />
+    </Key>
+    <Property Name="EventID" Type="Int32" Nullable="false" />
+    <Property Name="UserID" Type="Int32" />
+    <Property Name="Time" Type="DateTime" />
+    <Property Name="In" Type="Int32" />
+  </EntityType>
+  <EntityType Name="fcc">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="UserID" Type="Int32" />
+    <Property Name="ShiftID" Type="Int32" />
+    <Property Name="Date" Type="DateTime" />
+    <Property Name="Code" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="shift">
+    <Key>
+      <PropertyRef Name="ShiftID" />
+    </Key>
+    <Property Name="ShiftID" Type="Int32" Nullable="false" />
+    <Property Name="UserID" Type="Int32" />
+    <Property Name="Date" Type="DateTime" />
+    <Property Name="TimeIn" Type="DateTime" />
+    <Property Name="TimeOut" Type="DateTime" />
+    <Property Name="TimeWorked" Type="Time" />
+    <Property Name="RoundedTimeWorked" Type="Time" />
+    <Property Name="Comments" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="FirstName" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="LastName" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="Role" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="webtimeclock_radioEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="events" EntityType="Self.event" />
+    <EntitySet Name="fccs" EntityType="Self.fcc" />
+    <EntitySet Name="shifts" EntityType="Self.shift" />
+    <EntitySet Name="users" EntityType="Self.user" />
+  </EntityContainer>
+</Schema>

@@ -16,11 +16,11 @@ namespace WebApplication1
             //check if current computer is verified for use of application
             try
             {
-                String activated = Response.Cookies["ApplicationActivated"].Value;
+                String activated = Request.Cookies["ApplicationActivated"].Value;
 
                 if (activated != "activated")
                 {
-                    Response.Redirect("~/Verify.aspx");
+                    Response.Redirect("~/Verify.aspx", false);
                 }
             }
             catch (Exception ex)
@@ -41,6 +41,9 @@ namespace WebApplication1
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+
+
+
             var Clocked = Session["ClockedIn"].ToString().Split(' ');
             DateTime ClockTime = DateTime.Now;
 
@@ -54,11 +57,27 @@ namespace WebApplication1
             else if (Clocked[0] == "in")
             {
                 Clock.Text = "Clock in";
-                DateTime inTime = Convert.ToDateTime(Clocked[1] + " " + Clocked[2]);
+                DateTime inTime = Convert.ToDateTime(Clocked[1] + " " + Clocked[2] + " " + Clocked[3]);
                 DateTime outTime = DateTime.Now;
                 TimeSpan difference = outTime - inTime;
                 ClockedinTime.Text = "You worked " + difference.ToString();
                 Session["ClockedIn"] = "out " + ClockTime.ToString();
+
+                /*webtimeclock_radioEntities1 db = new webtimeclock_radioEntities1();
+
+                var shift = from shit in db.shifts
+                            where shit.UserID == 524063
+                            select shit;
+
+                shift s = new WebApplication1.shift()
+                {
+                    UserID = 524063,
+                    Date = DateTime.Now,
+                    TimeIn = inTime,
+                    TimeOut = outTime,
+                    TimeWorked = difference,
+                    Comments = "test"
+                };*/
 
             }
             else if (Clocked[0] == "out")
