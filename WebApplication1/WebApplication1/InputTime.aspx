@@ -40,6 +40,7 @@
             }
         </style>
     </head>
+
 <body onload="updateClock(); setInterval(&#39;updateClock()&#39;, 1000 )" bgcolor="#006747">
 
     <form id="form1" runat="server">
