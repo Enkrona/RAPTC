@@ -40,7 +40,13 @@
             <asp:Button ID="CreateUserBttn" runat="server" OnClick="CreateUserBttn_Click" Text="Create User" />
 
 
+            <br />
+            <br />
+            <br />
+
+
         </div>
+        <asp:Button ID="CancelBttn" runat="server" OnClick="Button1_Click" Text="Cancel" />
     </form>
 </body>
 </html>

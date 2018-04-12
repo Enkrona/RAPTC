@@ -91,6 +91,10 @@
 		&nbsp;&nbsp;&nbsp;
 		<asp:Button ID="editUsrBttn" runat="server" Text="Edit User" Width="84px" OnClick="editUsrBttn_Click" />
 		<br />
+        <br />
+		<br />
+
+	    <asp:Button ID="AddUsrBttn" runat="server" OnClick="Button1_Click" Text="Add User" />
 
 	    <br />
         <br />

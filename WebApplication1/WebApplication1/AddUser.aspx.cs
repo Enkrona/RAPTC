@@ -46,5 +46,13 @@ namespace WebApplication1
             //       WarningLbl.Visible = true; 
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            {
+                // Cancel button - takes the user back to Admin
+                Response.Redirect("~/Admin.aspx");
+            }
+        }
     }
 }

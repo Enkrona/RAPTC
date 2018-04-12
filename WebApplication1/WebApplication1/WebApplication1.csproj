@@ -43,6 +43,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="AddUser.aspx" />
     <Content Include="Admin.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
@@ -57,6 +58,13 @@
     <Content Include="LoginFailure.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddUser.aspx.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddUser.aspx.designer.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin.aspx.cs">
       <DependentUpon>Admin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -48,5 +48,11 @@ namespace WebApplication1
         {
             //Edit User Button
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            // Add User Button
+            Response.Redirect("~/AddUser.aspx");
+        }
     }
 }
