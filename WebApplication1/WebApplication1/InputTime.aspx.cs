@@ -149,5 +149,18 @@ namespace WebApplication1
 
             }
         }
+
+        protected void ViewReportBttn_Click(object sender, EventArgs e)
+        {
+            // On button click, it will attempt to redirect to the report page
+            try
+            {
+                Response.Redirect("~/UserReport.aspx");
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
     }
 }
