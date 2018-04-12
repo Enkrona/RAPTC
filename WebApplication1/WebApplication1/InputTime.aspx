@@ -53,6 +53,24 @@
     <font color="white"><p> This is a test user profile for demo</p></font>
         <img src="genericprofile.png" style="margin-right: 0px" height="200" width="200" />
         <asp:Button ID="Clock" runat="server" OnClick="Button1_Click" style="z-index: 1; left: 214px; top: 227px; position: absolute" Text="ClockIn" />
+        <br />
+        <br />
+        <br />
+        <br />
+        <asp:TextBox ID="FCCtxtBx" runat="server" OnTextChanged="FCCtxtBx_TextChanged" Width="230px"></asp:TextBox>
+        <asp:Label ID="WarningText" runat="server" Font-Size="X-Large" ForeColor="Red" Text="Not a Valid FCC Code" Visible="False"></asp:Label>
+        <br />
+        <br />
+        <asp:Button ID="FCCBttn" runat="server" OnClick="FCCBttn_Click" Text="Ener FCC Code" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="GoToFCCLogBttn" runat="server" OnClick="GoToFCCLogBttn_Click" Text="Go to FCC Log" />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <asp:Button ID="logoutBttn" runat="server" OnClick="logoutBttn_Click" Text="Logout" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     </form>
 </body>
 </html>

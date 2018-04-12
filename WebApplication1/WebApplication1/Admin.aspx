@@ -78,17 +78,6 @@
 			<br />
 			<br />
 			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
 	
 		<br />
 &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
@@ -98,12 +87,16 @@
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		
 		<br />
-&nbsp;<asp:Button ID="Button1" runat="server" Text="Add User" Width="84px" />
+&nbsp;<asp:Button ID="addUsrBttn" runat="server" Text="Add User" Width="84px" OnClick="Button1_Click" />
 		&nbsp;&nbsp;&nbsp;
-		<asp:Button ID="Button2" runat="server" Text="Remove User" Width="84px" />
+		<asp:Button ID="remUsrBttn" runat="server" Text="Remove User" Width="84px" OnClick="remUsrBttn_Click" />
 &nbsp;&nbsp;&nbsp;
-		<asp:Button ID="Button3" runat="server" Text="Edit User" Width="84px" />
+		<asp:Button ID="editUsrBttn" runat="server" Text="Edit User" Width="84px" OnClick="editUsrBttn_Click" />
 		<br />
+
+	    <br />
+        <br />
+        <asp:Button ID="logoutBttn" runat="server" OnClick="Button4_Click" Text="Logout" />
 
 	</form>
 </body>

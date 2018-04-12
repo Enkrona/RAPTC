@@ -26,6 +26,7 @@ namespace WebApplication1
                 Response.Cookies["ApplicationActivated"].Expires = DateTime.Now.AddDays(365);
                 Response.Redirect("~/Default.aspx");
             }
+
             else
             {
                 try

@@ -87,5 +87,67 @@ namespace WebApplication1
                 ClockedinTime.Text = "You clocked in at " + ClockTime.ToLongTimeString();
             }
         }
+
+        protected void logoutBttn_Click(object sender, EventArgs e)
+        {
+            // On button click, it will attempt to disable to cookie, and then redirect to the homepage
+            try
+            {
+
+                Response.Redirect("~/Default.aspx");
+
+                //Commented out the cookie because I don't get how it works :p 
+                //Response.Cookies["ApplicationActivated"].Value = "Deactivated";
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+
+        protected void FCCBttn_Click(object sender, EventArgs e)
+        {
+            String fcc_Code = FCCtxtBx.Text;
+
+            try
+            {
+                if (fcc_Code == "")
+                {
+                    //WarningText.Text = "That is not a valid FCC Code";
+                    WarningText.Visible = true;
+                }
+
+                else
+                {
+                    // input logic for FCC Code to the DB
+                }
+
+            }
+
+            catch (Exception ex)
+            {
+
+            }
+
+        }
+
+        protected void FCCtxtBx_TextChanged(object sender, EventArgs e)
+        {
+            WarningText.Visible = false;
+        }
+
+        protected void GoToFCCLogBttn_Click(object sender, EventArgs e)
+        {
+            // On button click, it will attempt to redirect to the FCCLog
+            try
+            {
+                Response.Redirect("~/FCCLog.aspx");
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
     }
 }

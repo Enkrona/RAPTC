@@ -47,5 +47,18 @@ namespace WebApplication1
         {
 
         }
+
+        protected void returnBttn_Click(object sender, EventArgs e)
+        {
+            // On button click, it will attempt to redirect to the homepage
+            try
+            {
+                Response.Redirect("~/Default.aspx");
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
     }
 }

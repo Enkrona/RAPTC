@@ -25,5 +25,38 @@ namespace WebApplication1
                 Response.Redirect("~/Verify.aspx");
             }
         }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            
+            // On button click, it will attempt to disable to cookie, and then redirect to the homepage
+            try
+            {
+                
+                Response.Redirect("~/Default.aspx");
+                //Commented out the cookie because I don't get how it works :p 
+                //Response.Cookies["ApplicationActivated"].Value = "Deactivated";
+                
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            //Add User Button
+        }
+
+        protected void remUsrBttn_Click(object sender, EventArgs e)
+        {
+            //Remove User Button
+        }
+
+        protected void editUsrBttn_Click(object sender, EventArgs e)
+        {
+            //Edit User Button
+        }
     }
 }
