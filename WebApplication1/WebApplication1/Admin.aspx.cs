@@ -44,16 +44,6 @@ namespace WebApplication1
             }
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            //Add User Button
-        }
-
-        protected void remUsrBttn_Click(object sender, EventArgs e)
-        {
-            //Remove User Button
-        }
-
         protected void editUsrBttn_Click(object sender, EventArgs e)
         {
             //Edit User Button

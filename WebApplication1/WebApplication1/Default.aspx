@@ -82,7 +82,6 @@
             <asp:Label ID="lblError" runat="server"></asp:Label>
         </p>
         <div id="footer">
-        <asp:ImageButton ID="ImageButton1" runat="server" Height="25px" ImageUrl="~/admin.png" Width="34px" OnClick="lbtnAdminLogin_Click" />
             </div>     
       </form>
         </div> 

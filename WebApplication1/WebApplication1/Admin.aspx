@@ -87,10 +87,8 @@
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		
 		<br />
-&nbsp;<asp:Button ID="addUsrBttn" runat="server" Text="Add User" Width="84px" OnClick="Button1_Click" />
+&nbsp;&nbsp;&nbsp;&nbsp;
 		&nbsp;&nbsp;&nbsp;
-		<asp:Button ID="remUsrBttn" runat="server" Text="Remove User" Width="84px" OnClick="remUsrBttn_Click" />
-&nbsp;&nbsp;&nbsp;
 		<asp:Button ID="editUsrBttn" runat="server" Text="Edit User" Width="84px" OnClick="editUsrBttn_Click" />
 		<br />
 
