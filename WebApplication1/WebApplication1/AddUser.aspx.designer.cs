@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApplication1 {
-    
-    
-    public partial class AddUser {
-        
+namespace WebApplication1
+{
+
+
+    public partial class AddUser
+    {
+
         /// <summary>
         /// form1 control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace WebApplication1 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
+
         /// <summary>
         /// Label1 control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace WebApplication1 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label1;
-        
+
         /// <summary>
         /// Label2 control.
         /// </summary>
@@ -38,7 +40,7 @@ namespace WebApplication1 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label2;
-        
+
         /// <summary>
         /// SNumTxtBx control.
         /// </summary>
@@ -47,7 +49,7 @@ namespace WebApplication1 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox SNumTxtBx;
-        
+
         /// <summary>
         /// Label3 control.
         /// </summary>
@@ -56,7 +58,7 @@ namespace WebApplication1 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label3;
-        
+
         /// <summary>
         /// FNameTxtBx control.
         /// </summary>
@@ -65,7 +67,7 @@ namespace WebApplication1 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox FNameTxtBx;
-        
+
         /// <summary>
         /// Label4 control.
         /// </summary>
@@ -74,7 +76,7 @@ namespace WebApplication1 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label4;
-        
+
         /// <summary>
         /// LNameTxtBx control.
         /// </summary>
@@ -83,7 +85,7 @@ namespace WebApplication1 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox LNameTxtBx;
-        
+
         /// <summary>
         /// Label5 control.
         /// </summary>
@@ -92,7 +94,7 @@ namespace WebApplication1 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label5;
-        
+
         /// <summary>
         /// CommentTxtBx control.
         /// </summary>
@@ -101,7 +103,7 @@ namespace WebApplication1 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox CommentTxtBx;
-        
+
         /// <summary>
         /// WarningLbl control.
         /// </summary>
@@ -110,7 +112,7 @@ namespace WebApplication1 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label WarningLbl;
-        
+
         /// <summary>
         /// CreateUserBttn control.
         /// </summary>
@@ -119,14 +121,5 @@ namespace WebApplication1 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button CreateUserBttn;
-        
-        /// <summary>
-        /// CancelBttn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button CancelBttn;
     }
 }
