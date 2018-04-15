@@ -44,29 +44,36 @@ namespace WebApplication1
 
         protected void btnUserLogin_Click(object sender, EventArgs e)
         {
+            webtimeclockEntities db = new webtimeclockEntities();
+
             //get the username from the username text box
-
             string userID = txtUserName.Text.ToString();
-
             string password = txtPassword.Text.ToString();
 
-            //log the user in, if this user id exists within the database
-            //UsersDataSetTableAdapters.UserTableAdapter userTableAdapter = new UsersDataSetTableAdapters.UserTableAdapter();
-            // DataTable usersDataTable = userTableAdapter.GetUserData();
+            try
+            {
+                var username = (from use in db.users
+                                where use.UserID == userID
+                                select use).Single();
+                Session["UserID"] = username + " " + username.Role.ToString();
 
-            if (userID.Equals("admin") && password.Equals("pass"))
-            {
-                Response.Redirect("~/Admin.aspx");
+                if (username.Role == 0)
+                {
+                    Response.Redirect("~/InputTime.aspx");
+                }
+                else if (username.Role == 1 || username.Role == 2)
+                {
+                    Response.Redirect("~/Admin.aspx");
+                } else
+                {
+                    Response.Redirect("~/LoginFailure.aspx");
+                }
             }
-            // Redirect for demo 
-            else if(userID.Equals("demo") && password.Equals("password"))
+            catch (Exception ex)
             {
-                Response.Redirect("~/InputTime.aspx");
+                
             }
-            else 
-            {
-                Response.Redirect("~/LoginFailure.aspx");
-            }
+
         }
         protected void lbtnAdminLogin_Click(object sender, EventArgs e)
         {
