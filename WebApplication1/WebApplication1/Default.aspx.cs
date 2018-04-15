@@ -6,6 +6,7 @@ using System.Net;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Cite.DomainAuthentication;
 
 namespace WebApplication1
 {
@@ -50,12 +51,24 @@ namespace WebApplication1
             string userID = txtUserName.Text.ToString();
             string password = txtPassword.Text.ToString();
 
+            string checkUser;
+            try
+            {   //authenticates the username and password before it passes it to the database to set session login.
+                DomainAccount u = new DomainAccount(userID, password);
+                checkUser = u.Username;
+            }
+            catch (Exception ex)
+            {
+                checkUser = "";
+            }
+
             try
             {
                 var username = (from use in db.users
-                                where use.UserID == userID
+                                where use.UserID == checkUser
                                 select use).Single();
-                Session["UserID"] = username + " " + username.Role.ToString();
+                string s = username.UserID + " " + username.Role.ToString();
+                Session["UserID"] = username.UserID + " " + username.Role.ToString();
 
                 if (username.Role == 0)
                 {

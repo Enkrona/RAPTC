@@ -2,6 +2,15 @@
 
 <script runat="server">
 
+	protected void txtUserName_TextChanged(object sender, EventArgs e)
+	{
+
+	}
+
+	protected void Page_Load(object sender, EventArgs e)
+	{
+
+	}
 </script>
 
 
