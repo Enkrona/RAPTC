@@ -41,52 +41,67 @@ namespace WebApplication1
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            webtimeclockEntities db = new webtimeclockEntities();
 
+            String userID = Session["UserID"].ToString().Split(' ')[0];
 
+            //Check if userid is already in active users
+            //if so, is clocked in
+            Boolean clockedIn = (from aUser in db.activeusers
+                                 where aUser.UserID == userID
+                                 select aUser).Count() == 1;
 
             var Clocked = Session["ClockedIn"].ToString().Split(' ');
             DateTime ClockTime = DateTime.Now;
 
-            if (Clocked[0] == "NA")
+            if (!clockedIn)
             {
+                String comments = Comments.Text;
                 Session["ClockedIn"] = "in " + ClockTime.ToString();
                 Clock.Text = "Clock out";
                 ClockedinTime.Text = "You clocked in at " + ClockTime.ToLongTimeString();
+
+                activeuser s = new activeuser
+                {
+                    UserID = userID,
+                    Time = ClockTime,
+                    Comments = comments
+                };
+
+                db.activeusers.Add(s);
+                db.SaveChanges();
             }
 
-            else if (Clocked[0] == "in")
+            else if (clockedIn)
             {
                 Clock.Text = "Clock in";
+
                 DateTime inTime = Convert.ToDateTime(Clocked[1] + " " + Clocked[2] + " " + Clocked[3]);
                 DateTime outTime = DateTime.Now;
                 TimeSpan difference = outTime - inTime;
                 ClockedinTime.Text = "You worked " + difference.ToString();
                 Session["ClockedIn"] = "out " + ClockTime.ToString();
 
-                webtimeclockEntities db = new webtimeclockEntities();
-
-                var shift = from shit in db.shifts
-                            where shit.UserID == "s524063"
-                            select shit;
-
+                //Add worked shift to the database
                 shift s = new shift()
                 {
-                    UserID = "s524063",
+                    UserID = userID,
                     Date = DateTime.Now,
                     TimeIn = inTime,
                     TimeOut = outTime,
                     TimeWorked = difference,
-                    Comments = "test"
+                    Comments = Comments.Text
                 };
                 db.shifts.Add(s);
                 db.SaveChanges();
 
-            }
-            else if (Clocked[0] == "out")
-            {
-                Clock.Text = "Clock out";
-                Session["ClockedIn"] = "in " + ClockTime.ToString();
-                ClockedinTime.Text = "You clocked in at " + ClockTime.ToLongTimeString();
+                //Remove user as active user
+                var user = (from aUser in db.activeusers
+                           where aUser.UserID == userID
+                           select aUser).Single();
+
+                db.activeusers.Remove(user);
+                db.SaveChanges();
             }
         }
 

@@ -18,11 +18,6 @@ namespace WebApplication1
         {
             //check to make sure the program has been activated on this machine
             string activatedCookie = "";
-
-            //*****************PRELIM COOKIE CHECK: DELETE EVENTUALLY**********************
-            //Request.Cookies["ApplicationActivated"].Value = "activated";
-            //*****************************************************************************
-
             try
             {
                 //attempt to retrieve the activated cookie
@@ -66,17 +61,20 @@ namespace WebApplication1
             }
 
             try
-            {
+            {   //retrieves db record with authenticated username
                 var username = (from use in db.users
                                 where use.UserID == checkUser
                                 select use).Single();
-                string s = username.UserID + " " + username.Role.ToString();
+
+                //sets session ID with username and role for use with clockin in
                 Session["UserID"] = username.UserID + " " + username.Role.ToString();
 
+                //User is student
                 if (username.Role == 0)
                 {
                     Response.Redirect("~/InputTime.aspx");
                 }
+                //user is student admin or admin
                 else if (username.Role == 1 || username.Role == 2)
                 {
                     Response.Redirect("~/Admin.aspx");

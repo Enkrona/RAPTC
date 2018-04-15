@@ -51,10 +51,8 @@
             <asp:Label ID="ClockedinTime" runat="server" style="z-index: 1; left: 351px; top: 109px; position: absolute"></asp:Label>
             </font> </div>
 
-    <font color="white"><p> This is a test user profile for demo</p></font>
-        <img src="genericprofile.png" style="margin-right: 0px" height="200" width="200" />
-        <asp:Button ID="Clock" runat="server" OnClick="Button1_Click" style="z-index: 1; left: 214px; top: 227px; position: absolute" Text="ClockIn" />
-        <asp:Button ID="ViewReportBttn" runat="server" OnClick="ViewReportBttn_Click" Text="View Time Report" />
+            <asp:Button ID="Clock" runat="server" OnClick="Button1_Click" style="z-index: 1; left: 214px; top: 227px; position: absolute" Text="ClockIn" />
+            <asp:Button ID="ViewReportBttn" runat="server" OnClick="ViewReportBttn_Click" Text="View Time Report" />
         <br />
         <br />
         <br />
@@ -66,9 +64,11 @@
         <asp:Button ID="FCCBttn" runat="server" OnClick="FCCBttn_Click" Text="Ener FCC Code" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Button ID="GoToFCCLogBttn" runat="server" OnClick="GoToFCCLogBttn_Click" Text="Go to FCC Log" />
+        <asp:Label ID="Label1" runat="server" style="z-index: 1; left: 425px; top: 333px; position: absolute" Text="Comments:"></asp:Label>
         <br />
         <br />
         <br />
+        <asp:TextBox ID="Comments" runat="server" MaxLength="200" style="z-index: 1; left: 419px; top: 369px; position: absolute; width: 278px"></asp:TextBox>
         <br />
         <br />
         <asp:Button ID="logoutBttn" runat="server" OnClick="logoutBttn_Click" Text="Logout" />
