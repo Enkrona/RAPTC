@@ -55,11 +55,9 @@ C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\bin\EntityFramewo
 C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\bin\EntityFramework.xml
 C:\Users\Bradley\Documents\RAPTC\RAPTC\WebApplication1\WebApplication1\bin\EntityFramework.dll
 C:\Users\Bradley\Documents\RAPTC\RAPTC\WebApplication1\WebApplication1\bin\EntityFramework.xml
-C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.dll
 C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\bin\MySql.Data.dll
 C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\bin\MySql.Data.Entity.EF5.dll
-C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\bin\MySql.Data.Entity.EF6.dll
 C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\bin\MySql.Web.dll
 C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\bin\MySql.Web.v20.dll
 C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\bin\System.Web.Helpers.dll
@@ -69,9 +67,7 @@ C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\bin\System.Web.We
 C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.dll
 C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\bin\WebMatrix.Data.dll
 C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\bin\WebMatrix.WebData.dll
-C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml
 C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\bin\MySql.Data.xml
-C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\bin\MySql.Data.Entity.EF6.xml
 C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\bin\MySql.Web.xml
 C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\bin\System.Web.Helpers.xml
 C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\bin\System.Web.Razor.xml
