@@ -18,6 +18,7 @@ namespace WebApplication1
             {
                 webtimeclockEntities db = new webtimeclockEntities();
 
+                String userID = Session["UserID"].ToString().Split(' ')[0];
                 String activated = Request.Cookies["ApplicationActivated"].Value;
 
                 if (activated != "activated")
@@ -25,8 +26,14 @@ namespace WebApplication1
                     Response.Redirect("~/Verify.aspx", false);
                 }
 
+                Boolean clockedIn = (from aUser in db.activeusers
+                                     where aUser.UserID == userID
+                                     select aUser).Count() == 1;
 
-
+                if (clockedIn)
+                {
+                    Clock.Text = "Clock out.";
+                }
             }
             catch (Exception ex)
             {

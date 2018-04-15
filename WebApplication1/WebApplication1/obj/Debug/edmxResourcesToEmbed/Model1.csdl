@@ -5,7 +5,7 @@
       <PropertyRef Name="UserID" />
     </Key>
     <Property Name="UserID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="Time" Type="DateTime" />
+    <Property Name="Time" Type="DateTime" Nullable="false" />
     <Property Name="Comments" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="fcc">

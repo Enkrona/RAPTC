@@ -7,17 +7,20 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-
-public partial class shift
+namespace WebApplication1
 {
-    public int ShiftID { get; set; }
-    public string UserID { get; set; }
-    public Nullable<System.DateTime> Date { get; set; }
-    public Nullable<System.DateTime> TimeIn { get; set; }
-    public Nullable<System.DateTime> TimeOut { get; set; }
-    public Nullable<System.TimeSpan> TimeWorked { get; set; }
-    public Nullable<System.TimeSpan> RoundedTimeWorked { get; set; }
-    public string Comments { get; set; }
+    using System;
+    using System.Collections.Generic;
+    
+    public partial class shift
+    {
+        public int ShiftID { get; set; }
+        public string UserID { get; set; }
+        public Nullable<System.DateTime> Date { get; set; }
+        public Nullable<System.DateTime> TimeIn { get; set; }
+        public Nullable<System.DateTime> TimeOut { get; set; }
+        public Nullable<System.TimeSpan> TimeWorked { get; set; }
+        public Nullable<System.TimeSpan> RoundedTimeWorked { get; set; }
+        public string Comments { get; set; }
+    }
 }

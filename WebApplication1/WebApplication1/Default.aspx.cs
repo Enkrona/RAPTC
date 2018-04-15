@@ -78,7 +78,8 @@ namespace WebApplication1
                 else if (username.Role == 1 || username.Role == 2)
                 {
                     Response.Redirect("~/Admin.aspx");
-                } else
+                }
+                else
                 {
                     Response.Redirect("~/LoginFailure.aspx");
                 }

@@ -66,11 +66,11 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Model1.tt">
+    <EntityDeploy Include="Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
-    </Content>
+    </EntityDeploy>
     <Content Include="UserReport.aspx" />
     <Content Include="Verify.aspx" />
     <Content Include="Web.config">
