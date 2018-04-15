@@ -51,15 +51,18 @@ namespace WebApplication1
             string userID = txtUserName.Text.ToString();
             string password = txtPassword.Text.ToString();
 
-            string checkUser;
+            string checkUser = "";
             try
-            {   //authenticates the username and password before it passes it to the database to set session login.
+            {   //authenticates the username and password before it passes username to the database to set session login and role check.
                 DomainAccount u = new DomainAccount(userID, password);
-                checkUser = u.Username;
+                if (u.IsAuthenticated)
+                {
+                    checkUser = u.Username;
+                }
             }
             catch (Exception ex)
             {
-                checkUser = "";
+                throw ex;
             }
 
             try
