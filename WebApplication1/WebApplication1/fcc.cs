@@ -7,15 +7,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApplication1
+using System;
+using System.Collections.Generic;
+
+public partial class fcc
 {
-    using System;
-    using System.Collections.Generic;
-    
-    public partial class fcc
-    {
-        public string UserID { get; set; }
-        public Nullable<int> ShiftID { get; set; }
-        public string Code { get; set; }
-    }
+    public string UserID { get; set; }
+    public Nullable<int> ShiftID { get; set; }
+    public string Code { get; set; }
 }

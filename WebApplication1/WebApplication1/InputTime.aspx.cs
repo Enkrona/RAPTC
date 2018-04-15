@@ -16,26 +16,21 @@ namespace WebApplication1
             //check if current computer is verified for use of application
             try
             {
+                webtimeclockEntities db = new webtimeclockEntities();
+
                 String activated = Request.Cookies["ApplicationActivated"].Value;
 
                 if (activated != "activated")
                 {
                     Response.Redirect("~/Verify.aspx", false);
                 }
+
+
+
             }
             catch (Exception ex)
             {
                 Response.Redirect("~/Verify.aspx");
-            }
-
-
-            try
-            {
-                var Clocked = Session["ClockedIn"].ToString().Split(' ');
-            }
-            catch (Exception ex)
-            {
-                Session["ClockedIn"] = "NA " + DateTime.Now.ToString();
             }
         }
 
@@ -51,7 +46,6 @@ namespace WebApplication1
                                  where aUser.UserID == userID
                                  select aUser).Count() == 1;
 
-            var Clocked = Session["ClockedIn"].ToString().Split(' ');
             DateTime ClockTime = DateTime.Now;
 
             if (!clockedIn)
@@ -76,7 +70,9 @@ namespace WebApplication1
             {
                 Clock.Text = "Clock in";
 
-                DateTime inTime = Convert.ToDateTime(Clocked[1] + " " + Clocked[2] + " " + Clocked[3]);
+                DateTime inTime = (from aUser in db.activeusers
+                                   where aUser.UserID == userID
+                                   select aUser).Single().Time;
                 DateTime outTime = DateTime.Now;
                 TimeSpan difference = outTime - inTime;
                 ClockedinTime.Text = "You worked " + difference.ToString();
