@@ -63,21 +63,23 @@ namespace WebApplication1
                 ClockedinTime.Text = "You worked " + difference.ToString();
                 Session["ClockedIn"] = "out " + ClockTime.ToString();
 
-                /*webtimeclock_radioEntities1 db = new webtimeclock_radioEntities1();
+                webtimeclockEntities db = new webtimeclockEntities();
 
                 var shift = from shit in db.shifts
-                            where shit.UserID == 524063
+                            where shit.UserID == "s524063"
                             select shit;
 
-                shift s = new WebApplication1.shift()
+                shift s = new shift()
                 {
-                    UserID = 524063,
+                    UserID = "s524063",
                     Date = DateTime.Now,
                     TimeIn = inTime,
                     TimeOut = outTime,
                     TimeWorked = difference,
                     Comments = "test"
-                };*/
+                };
+                db.shifts.Add(s);
+                db.SaveChanges();
 
             }
             else if (Clocked[0] == "out")
