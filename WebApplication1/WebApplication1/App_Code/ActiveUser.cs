@@ -9,7 +9,7 @@ using System.Web;
 public class ActiveUser
 {
 
-   public string UserID {get; set;}
+   /*public string UserID {get; set;}
    public string FirstName { get; set; }
    public string LastName { get; set; }
    public DateTime TimeIn { get; set; }
@@ -20,5 +20,5 @@ public class ActiveUser
         this.FirstName = firstName;
         this.LastName = lastName;
         this.TimeIn = timeIn;
-	}
+	}*/
 }

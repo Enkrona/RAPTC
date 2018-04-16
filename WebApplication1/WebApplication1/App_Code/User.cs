@@ -9,7 +9,7 @@ using System.Web;
 public class User
 {
 
-    String UserID;
+    /*String UserID;
     String FirstName;
     String LastName;
     int MaxHoursAllowed;
@@ -77,5 +77,5 @@ public class User
     public void SetMaxHoursAllowed(int maxHoursAllowed)
     {
         this.MaxHoursAllowed = maxHoursAllowed;
-    }
+    }*/
 }

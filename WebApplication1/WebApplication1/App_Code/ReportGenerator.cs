@@ -7,7 +7,7 @@ using System.Data;
 public class ReportGenerator
 {
 
-    public String UserID;
+    /*public String UserID;
     public String UserFirstName;
     public String UserLastName;
     public DateTime StartDate;
@@ -42,8 +42,7 @@ public class ReportGenerator
     protected List<TimeTableRow> GenerateHoursTable(DateTime startDate, DateTime endDate)
     {
         //read shifts from the shift table
-        UserDataSetTableAdapters.ShiftTableAdapter shiftTableAdapter = new UserDataSetTableAdapters.ShiftTableAdapter();
-        DataTable shiftTable = shiftTableAdapter.GetData();
+
 
         //query the table for shifts with the matching user id and within specified begin and end time
         var table =
@@ -79,5 +78,5 @@ public class ReportGenerator
     protected string TimeSpanString(DateTime StartDate, DateTime EndDate)
     {
         return "Shifts from " + StartDate.ToShortDateString() + " to " + EndDate.ToShortDateString();
-    }
+    }*/
 }

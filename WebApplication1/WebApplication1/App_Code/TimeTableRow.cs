@@ -9,7 +9,7 @@ using System.Web;
 public class TimeTableRow
 {
 
-    String Date;
+    /*String Date;
     String TimeIn;
     String TimeOut;
     String RoundedTimeIn;
@@ -170,7 +170,7 @@ public class TimeTableRow
     public String GetComment()
     {
         return Comment;
-    }
+    }*/
 }
 
    

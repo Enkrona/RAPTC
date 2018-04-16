@@ -51,12 +51,8 @@ C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\bin\WebApplicatio
 C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
 C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
-C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\bin\EntityFramework.dll
 C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\bin\EntityFramework.xml
 C:\Users\Bradley\Documents\RAPTC\RAPTC\WebApplication1\WebApplication1\bin\EntityFramework.dll
 C:\Users\Bradley\Documents\RAPTC\RAPTC\WebApplication1\WebApplication1\bin\EntityFramework.xml
 C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
-C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.dll
-C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\bin\MySql.Data.dll
-C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\bin\MySql.Data.Entity.EF6.dll
 C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml
