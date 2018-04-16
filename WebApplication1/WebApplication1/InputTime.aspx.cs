@@ -92,7 +92,7 @@ namespace WebApplication1
                                    select aUser).Single().Time;
                 DateTime outTime = DateTime.Now;
                 TimeSpan difference = outTime - inTime;
-                TimeSpan roundedDifference = TimeSpan.FromMinutes(15 * Math.Ceiling(difference.TotalMinutes + 7 / 15));
+                TimeSpan roundedDifference = TimeSpan.FromMinutes(15 * Math.Ceiling((difference.TotalMinutes - 7) / 15));
                 ClockedinTime.Text = "You worked " + difference.ToString();
                 Session["ClockedIn"] = "out " + ClockTime.ToString();
 

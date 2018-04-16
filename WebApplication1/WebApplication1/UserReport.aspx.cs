@@ -79,7 +79,8 @@ namespace WebApplication1
                 if (!radio_month.Checked && !radio_week.Checked)
                 {
                     //say some stuff about needing to check it
-                } else if (radio_month.Checked)
+                }
+                else if (radio_month.Checked)
                 {
                     DateTime time = DateTime.Now;
                     DateTime monthStart = new DateTime(time.Year, time.Month, 1);
@@ -88,6 +89,21 @@ namespace WebApplication1
                     //incorporates all the functions of report generation
                     s = new TimeReport(user.UserID, user.FirstName, user.LastName,
                         TimeSpanString(monthStart, monthEnd), GenerateHoursTable(monthStart, monthEnd, userID));
+
+                    DisplayReport(s);
+                }
+                else if (radio_week.Checked)
+                {
+                    DateTime time = DateTime.Today;
+                    int offset = time.DayOfWeek - DayOfWeek.Sunday;
+
+                    //last sunday
+                    DateTime start = time.AddDays(-offset);
+                    //this saturday
+                    DateTime end = start.AddDays(6);
+
+                    s = new TimeReport(user.UserID, user.FirstName, user.LastName,
+                        TimeSpanString(start, end), GenerateHoursTable(start, end, userID));
 
                     DisplayReport(s);
                 }
