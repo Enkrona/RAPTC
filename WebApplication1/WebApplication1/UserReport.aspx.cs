@@ -11,7 +11,10 @@ namespace WebApplication1
 	{
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["UserID"] == null)
+            {
+                Response.Redirect("~/Default.aspx", false);
+            }
         }
 
         protected List<TimeTableRow> GenerateHoursTable(DateTime startDate, DateTime endDate, String UserID)
@@ -20,25 +23,17 @@ namespace WebApplication1
             webtimeclockEntities db = new webtimeclockEntities();
 
             //query the table for shifts with the matching user id and within specified begin and end time
-            var table = from row in db.shifts
-                        where row.UserID == UserID
-                        where row.Date >= startDate
-                        where row.Date <= endDate
-                        orderby row.Date
-                        select row;
-
-            /* var table =
-            from row in shiftTable.AsEnumerable()
-            where row.Field<string>("UserID") == UserID
-            && row.Field<DateTime>("Date") >= startDate
-            && row.Field<DateTime>("Date") <= endDate
-            orderby row.Field<DateTime>("Date")
-            select row;*/
+            var table =  from row in db.shifts
+                         where row.UserID == UserID
+                         where row.Date >= startDate
+                         where row.Date <= endDate
+                         orderby row.Date
+                         select row;
 
             //create time table rows with the selected shifts
             List <TimeTableRow> timeTableRows = new List<TimeTableRow>();
-            int t = table.Count();
-            foreach (var row in table.ToList())
+
+            foreach (shift row in table)
             {
                 //read data from data table
                 DateTime shiftDate = row.Date.Date;
@@ -53,7 +48,6 @@ namespace WebApplication1
                 //add rows to time table
                 TimeTableRow timeTableRowToAdd = new TimeTableRow(shiftDate.ToShortDateString(), timeIn, timeOut, totalHoursWorked, roundedHoursWorked, comment);
                 timeTableRows.Add(timeTableRowToAdd);
-
             }
             return timeTableRows;
         }
@@ -133,7 +127,7 @@ namespace WebApplication1
             };
 
             table_report.Rows.Add(header);
-            table_report.CellSpacing = 10000;
+            table_report.CellSpacing = 10;
 
             List<TimeTableRow> ttrList = timeReport.TimeTableRows;
 
