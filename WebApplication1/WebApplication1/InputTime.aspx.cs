@@ -82,6 +82,7 @@ namespace WebApplication1
                                    select aUser).Single().Time;
                 DateTime outTime = DateTime.Now;
                 TimeSpan difference = outTime - inTime;
+                TimeSpan roundedDifference = TimeSpan.FromMinutes(15 * Math.Ceiling(difference.TotalMinutes / 15));
                 ClockedinTime.Text = "You worked " + difference.ToString();
                 Session["ClockedIn"] = "out " + ClockTime.ToString();
 
@@ -93,6 +94,7 @@ namespace WebApplication1
                     TimeIn = inTime,
                     TimeOut = outTime,
                     TimeWorked = difference,
+                    RoundedTimeWorked = roundedDifference,
                     Comments = Comments.Text
                 };
                 db.shifts.Add(s);
@@ -116,8 +118,9 @@ namespace WebApplication1
 
                 Response.Redirect("~/Default.aspx");
 
-                //Commented out the cookie because I don't get how it works :p 
-                //Response.Cookies["ApplicationActivated"].Value = "Deactivated";
+                //Commented out the cookie because I don't get how it works :p //cokie must stay, it is how kirt authenticates the computer they log in on
+                //Response.Cookies["ApplicationActivated"].Value = "Deactivated";  //session can change but i don't think we need to do that either.
+                                                                                  //will all get changed when someone else logs on anyway
 
             }
             catch (Exception ex)
