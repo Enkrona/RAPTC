@@ -107,8 +107,8 @@
     </Compile>
     <Content Include="App_Code\ActiveUser.cs" />
     <Content Include="App_Code\ReportGenerator.cs" />
-    <Content Include="App_Code\TimeReport.cs" />
-    <Content Include="App_Code\TimeTableRow.cs" />
+    <Compile Include="App_Code\TimeReport.cs" />
+    <Compile Include="App_Code\TimeTableRow.cs" />
     <Content Include="App_Code\User.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

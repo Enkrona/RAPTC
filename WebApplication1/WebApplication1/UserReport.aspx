@@ -14,6 +14,8 @@
 <body>
     <form id="form1" runat="server">
         <h1 id="button">Example User Report</h1>
+        <asp:RadioButton ID="radio_week" runat="server" Text="This Week" />
+        <asp:RadioButton ID="radio_month" runat="server" Text="This Month" />
         <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Height="227px" Width="954px">
             <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
             <EditRowStyle BackColor="#999999" />
@@ -27,9 +29,16 @@
             <SortedDescendingCellStyle BackColor="#FFFDF8" />
             <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
         </asp:GridView>
+        <asp:Button ID="button_generate" runat="server" OnClick="Button2_Click" Text="Generate Reports" />
         <div id="button">
-            <asp:Button ID="Button1" runat="server" Text="Back" OnClick="Button1_Click"/>
         </div>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
+        <p>
+            <asp:Button ID="Button1" runat="server" Text="Back" OnClick="Button1_Click"/>
+        </p>
     </form>
 </body>
 </html>

@@ -12,7 +12,7 @@ using System.Collections;
 public class TimeReport
 {
 
-    /*public String UserID;
+    public String UserID;
     public String UserFirstName;
     public String UserLastName;
     public String ReportTimeSpan;
@@ -71,6 +71,6 @@ public class TimeReport
     public void SetReportTimeSpan(String reportTimeSpan)
     {
         this.ReportTimeSpan = reportTimeSpan;
-    }*/
+    }
   
 }
