@@ -23,10 +23,10 @@
     <Property Name="ShiftID" Type="Int32" Nullable="false" />
     <Property Name="UserID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
     <Property Name="Date" Type="DateTime" Nullable="false" />
-    <Property Name="TimeIn" Type="DateTime" />
-    <Property Name="TimeOut" Type="DateTime" />
-    <Property Name="TimeWorked" Type="Time" />
-    <Property Name="RoundedTimeWorked" Type="Time" />
+    <Property Name="TimeIn" Type="DateTime" Nullable="false" />
+    <Property Name="TimeOut" Type="DateTime" Nullable="false" />
+    <Property Name="TimeWorked" Type="Time" Nullable="false" />
+    <Property Name="RoundedTimeWorked" Type="Time" Nullable="false" />
     <Property Name="Comments" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="user">

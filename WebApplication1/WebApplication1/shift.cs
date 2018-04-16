@@ -15,9 +15,9 @@ public partial class shift
     public int ShiftID { get; set; }
     public string UserID { get; set; }
     public System.DateTime Date { get; set; }
-    public Nullable<System.DateTime> TimeIn { get; set; }
-    public Nullable<System.DateTime> TimeOut { get; set; }
-    public Nullable<System.TimeSpan> TimeWorked { get; set; }
-    public Nullable<System.TimeSpan> RoundedTimeWorked { get; set; }
+    public System.DateTime TimeIn { get; set; }
+    public System.DateTime TimeOut { get; set; }
+    public System.TimeSpan TimeWorked { get; set; }
+    public System.TimeSpan RoundedTimeWorked { get; set; }
     public string Comments { get; set; }
 }
