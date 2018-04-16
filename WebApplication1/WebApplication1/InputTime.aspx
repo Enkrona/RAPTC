@@ -38,12 +38,20 @@
             #clock {
                 width: 921px;
             }
+            #center {
+                text-align: center;
+                background-color: gold;
+            }
         </style>
     </head>
 
 <body onload="updateClock(); setInterval(&#39;updateClock()&#39;, 1000 )" bgcolor="#006747">
 
     <form id="form1" runat="server">
+
+    <header id="center">
+        <h1 id="center">Welcome back, <%=name()%>!</h1>
+    </header>
 
      <div id="container"> 
             <font size="20" color="white" > <p id="clock">10:15:23 AM</p> 

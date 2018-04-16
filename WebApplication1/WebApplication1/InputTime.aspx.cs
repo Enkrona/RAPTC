@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cite.DomainAuthentication;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -19,6 +20,8 @@ namespace WebApplication1
                 webtimeclockEntities db = new webtimeclockEntities();
 
                 String userID = Session["UserID"].ToString().Split(' ')[0];
+                DomainAccount u = new DomainAccount(userID);
+                String name = u.FirstName;
                 String activated = Request.Cookies["ApplicationActivated"].Value;
 
                 if (activated != "activated")
@@ -39,6 +42,13 @@ namespace WebApplication1
             {
                 Response.Redirect("~/Verify.aspx");
             }
+        }
+
+        protected String name()
+        {
+            String userID = Session["UserID"].ToString().Split(' ')[0];
+            DomainAccount u = new DomainAccount(userID);
+            return u.FirstName;
         }
 
         protected void Button1_Click(object sender, EventArgs e)
