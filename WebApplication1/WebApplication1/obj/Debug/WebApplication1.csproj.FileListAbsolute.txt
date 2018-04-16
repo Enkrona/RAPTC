@@ -65,3 +65,13 @@ C:\Users\S523411\Desktop\TimeClock\RAPTC\WebApplication1\WebApplication1\obj\Deb
 C:\Users\S523411\Desktop\TimeClock\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
 C:\Users\S523411\Desktop\TimeClock\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\S523411\Desktop\TimeClock\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\s523368\Desktop\RAPTC\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\s523368\Desktop\RAPTC\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\Users\s523368\Desktop\RAPTC\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Users\s523368\Desktop\RAPTC\WebApplication1\WebApplication1\bin\EntityFramework.xml
+C:\Users\s523368\Desktop\RAPTC\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml
+C:\Users\s523368\Desktop\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+C:\Users\s523368\Desktop\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Users\s523368\Desktop\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
+C:\Users\s523368\Desktop\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\s523368\Desktop\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb

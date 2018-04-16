@@ -29,12 +29,16 @@
             <asp:TextBox ID="LNameTxtBx" runat="server" MaxLength="30" Width="165px"></asp:TextBox>
             <br />
             <br />
-            <asp:Label ID="Label5" runat="server" Font-Size="Medium" ForeColor="White" Text="Comment:"></asp:Label>
+            <asp:Label ID="Label5" runat="server" Font-Size="Medium" ForeColor="White" Text="User Role:"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="CommentTxtBx" runat="server" MaxLength="100" Width="165px"></asp:TextBox>
+            <asp:DropDownList ID="RoleDDL" runat="server">
+                <asp:ListItem Text="Regular User" Value="0"></asp:ListItem>
+                <asp:ListItem Text="Time Admin" Value="1"></asp:ListItem>
+                <asp:ListItem Text="Super Time Admin" Value="2"></asp:ListItem>
+            </asp:DropDownList>
             <br />
             <br />
-            <asp:Label ID="WarningLbl" runat="server" Font-Bold="True" Font-Overline="False" Font-Size="X-Large" Font-Underline="True" ForeColor="Red" Text="Failed to Create User" Visible="False"></asp:Label>
+            <asp:Label ID="WarningLbl" runat="server" Font-Bold="True" Font-Overline="False" Font-Size="X-Large" Font-Underline="True" ForeColor="Red" Text="User already exists" Visible="False"></asp:Label>
             <br />
             <br />
             <asp:Button ID="CreateUserBttn" runat="server" OnClick="CreateUserBttn_Click" Text="Create User" />

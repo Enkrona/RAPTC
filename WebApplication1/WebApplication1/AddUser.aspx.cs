@@ -28,10 +28,68 @@ namespace WebApplication1
 
         protected void CreateUserBttn_Click(object sender, EventArgs e)
         {
-            String sNum = SNumTxtBx.Text;
-            String fName = FNameTxtBx.Text;
-            String lName = LNameTxtBx.Text;
-            String com = CommentTxtBx.Text;
+            webtimeclockEntities db = new webtimeclockEntities();
+
+            // get info from text input
+            String sNum = SNumTxtBx.Text.ToString();
+            String fName = FNameTxtBx.Text.ToString();
+            String lName = LNameTxtBx.Text.ToString();
+            int role = Int32.Parse(RoleDDL.SelectedItem.Value);
+
+            try
+            { // check if userid is in users table
+                Boolean usercheck1 = (from use in db.users
+                                    where use.UserID == sNum
+                                    select use).Count() == 1;
+                
+                // if it is, display warning
+                if (usercheck1)
+                {
+                    WarningLbl.Visible = true;
+                    return;
+                }
+                
+                // if not, create new user
+                
+                // have to add domain user name check
+                // ex: s123 is not a valid user
+
+                user u = new user
+                {
+                    UserID = sNum,
+                    FirstName = fName,
+                    LastName = lName,
+                    Role = role
+                };
+
+                db.users.Add(u);
+                db.SaveChanges();
+
+                Boolean usercheck2 = (from use in db.users
+                                    where use.UserID == sNum
+                                    select use).Count() == 1;
+
+                // if it is, redirect to admin
+                if (usercheck2)
+                {
+                    WarningLbl.Text = "User was added!";
+                    WarningLbl.Visible = true;
+
+                    // add a timer?
+                    Response.Redirect("~/Admin.aspx");
+                }
+                else
+                {
+                    WarningLbl.Text = "User was not added";
+                    WarningLbl.Visible = true;
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
 
             //  Pseduo Code for checking a successful post to database
             // try 
