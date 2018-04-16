@@ -7,16 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApplication1
+using System;
+using System.Collections.Generic;
+
+public partial class user
 {
-    using System;
-    using System.Collections.Generic;
-    
-    public partial class user
-    {
-        public string UserID { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public Nullable<int> Role { get; set; }
-    }
+    public string UserID { get; set; }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public Nullable<int> Role { get; set; }
 }

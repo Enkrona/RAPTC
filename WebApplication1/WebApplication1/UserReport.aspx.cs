@@ -14,7 +14,51 @@ namespace WebApplication1
 
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected List<TimeTableRow> GenerateHoursTable(DateTime startDate, DateTime endDate, String UserID)
+        {
+            //read shifts from the shift table
+            webtimeclockEntities db = new webtimeclockEntities();
+
+            //query the table for shifts with the matching user id and within specified begin and end time
+            var table = from row in db.shifts
+                        where row.UserID == UserID
+                        where row.Date >= startDate
+                        where row.Date <= endDate
+                        orderby row.Date
+                        select row;
+
+            /* var table =
+            from row in shiftTable.AsEnumerable()
+            where row.Field<string>("UserID") == UserID
+            && row.Field<DateTime>("Date") >= startDate
+            && row.Field<DateTime>("Date") <= endDate
+            orderby row.Field<DateTime>("Date")
+            select row;*/
+
+            //create time table rows with the selected shifts
+            List <TimeTableRow> timeTableRows = new List<TimeTableRow>();
+
+            foreach (shift row in table)
+            {
+                //read data from data table
+                DateTime shiftDate = row.Date;
+                string timeIn = row.TimeIn.ToString();
+                string timeOut = row.TimeOut.ToString();
+                string totalHoursWorked = row.TimeWorked.ToString();
+                string roundedHoursWorked = row.RoundedTimeWorked.ToString();
+                string comment = row.Comments;
+
+                //add rows to time table
+                TimeTableRow timeTableRowToAdd = new TimeTableRow(shiftDate.ToShortDateString(), timeIn, timeOut, totalHoursWorked, roundedHoursWorked, comment);
+                timeTableRows.Add(timeTableRowToAdd);
+
+            }
+            return timeTableRows;
+
+        }
+
+
+            protected void Button1_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/InputTime.aspx");
         }
@@ -40,6 +84,10 @@ namespace WebApplication1
                     DateTime time = DateTime.Now;
                     DateTime monthStart = new DateTime(time.Year, time.Month, 1);
                     DateTime monthEnd = new DateTime(time.Year, time.Month, DateTime.DaysInMonth(time.Year, time.Month));
+
+                    TimeReport report = new TimeReport();
+
+
                 }
 
             } catch (Exception ex)

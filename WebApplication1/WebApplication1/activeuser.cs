@@ -7,15 +7,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApplication1
+using System;
+using System.Collections.Generic;
+
+public partial class activeuser
 {
-    using System;
-    using System.Collections.Generic;
-    
-    public partial class activeuser
-    {
-        public string UserID { get; set; }
-        public System.DateTime Time { get; set; }
-        public string Comments { get; set; }
-    }
+    public string UserID { get; set; }
+    public System.DateTime Time { get; set; }
+    public string Comments { get; set; }
 }

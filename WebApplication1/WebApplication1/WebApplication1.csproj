@@ -106,7 +106,7 @@
       <DependentUpon>Admin.aspx</DependentUpon>
     </Compile>
     <Content Include="App_Code\ActiveUser.cs" />
-    <Content Include="App_Code\ReportGenerator.cs" />
+    <Compile Include="App_Code\ReportGenerator.cs" />
     <Compile Include="App_Code\TimeReport.cs" />
     <Compile Include="App_Code\TimeTableRow.cs" />
     <Content Include="App_Code\User.cs" />

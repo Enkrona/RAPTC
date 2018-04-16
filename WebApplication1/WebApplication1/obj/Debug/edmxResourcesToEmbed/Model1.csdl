@@ -22,7 +22,7 @@
     </Key>
     <Property Name="ShiftID" Type="Int32" Nullable="false" />
     <Property Name="UserID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-    <Property Name="Date" Type="DateTime" />
+    <Property Name="Date" Type="DateTime" Nullable="false" />
     <Property Name="TimeIn" Type="DateTime" />
     <Property Name="TimeOut" Type="DateTime" />
     <Property Name="TimeWorked" Type="Time" />

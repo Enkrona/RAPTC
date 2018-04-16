@@ -66,55 +66,26 @@ public class TimeTableRow
             #region minutes rounding
             if (minutes < 15)
             {
-                if (minutes <= 7)
-                {
-                    minutes = 0;
-                }
-                else
-                {
-                    minutes = 15;
-                }
+                minutes = 15;
             }
             else if (minutes < 30)
             {
-                if (minutes <= 22)
-                {
-                    minutes = 15;
-                }
-                else
-                {
-                    minutes = 30;
-                }
+                minutes = 30;
             }
             else if (minutes < 45)
             {
-                if (minutes <= 37)
-                {
-                    minutes = 30;
-                }
-                else
-                {
-                    minutes = 45;
-                }
+                minutes = 45;
             }
             else if (minutes < 60)
             {
-                if (minutes <= 52)
-                {
-                    minutes = 45;
-                }
-                else
-                {
-                    minutes = 0;
-                    int hours = int.Parse(hoursSection);
-                    hours++;
+                minutes = 0;
+                int hours = int.Parse(hoursSection);
+                hours++;
 
-                    if (hours == 13)
-                        hours = 1;
+                if (hours == 13)
+                    hours = 1;
 
-                    return hours.ToString() + ":00" + AMorPM;
-                }
-
+                return hours.ToString() + ":00" + AMorPM;
             }
             #endregion
 

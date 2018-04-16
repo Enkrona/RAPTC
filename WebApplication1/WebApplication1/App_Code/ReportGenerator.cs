@@ -42,7 +42,7 @@ public class ReportGenerator
     protected List<TimeTableRow> GenerateHoursTable(DateTime startDate, DateTime endDate)
     {
         //read shifts from the shift table
-
+        webtimeclockEntities()
 
         //query the table for shifts with the matching user id and within specified begin and end time
         var table =
