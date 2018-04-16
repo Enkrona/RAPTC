@@ -70,7 +70,7 @@ namespace WebApplication1
                 String comments = Comments.Text;
                 Session["ClockedIn"] = "in " + ClockTime.ToString();
                 Clock.Text = "Clock out";
-                ClockedinTime.Text = "You clocked in at " + ClockTime.ToLongTimeString();
+                ClockedinTime.Text = "You clocked in at " + ClockTime.ToShortTimeString();
 
                 activeuser s = new activeuser
                 {

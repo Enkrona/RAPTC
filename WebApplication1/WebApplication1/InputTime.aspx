@@ -49,15 +49,21 @@
 
     <form id="form1" runat="server">
 
-    <header id="center">
+    <header>
         <h1 id="center">Welcome back, <%=name()%>!</h1>
     </header>
-
-     <div id="container"> 
-            <font size="20" color="white" > <p id="clock">10:15:23 AM</p> 
-            <p style="width: 317px"><script> document.write(new Date().toLocaleDateString()); </script></p> 
-            <asp:Label ID="ClockedinTime" runat="server" style="z-index: 1; left: 351px; top: 109px; position: absolute"></asp:Label>
-            </font> </div>
+    <table>
+        <tbody>
+            <tr>
+                <td style="width:300px">
+                    <font size="20" color="white" > <p id="clock">10:15:23 AM</p> 
+                    <p style="width: 317px"><script> document.write(new Date().toLocaleDateString()); </script></p> 
+                    <asp:Label ID="ClockedinTime" runat="server" style="z-index: 1; left: 351px; top: 109px; position: absolute"></asp:Label>
+                    </font>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 
             <asp:Button ID="Clock" runat="server" OnClick="Button1_Click" style="z-index: 1; left: 214px; top: 227px; position: absolute" Text="ClockIn" />
             <asp:Button ID="ViewReportBttn" runat="server" OnClick="ViewReportBttn_Click" Text="View Time Report" />
