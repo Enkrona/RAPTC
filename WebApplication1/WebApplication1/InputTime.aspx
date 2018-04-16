@@ -61,7 +61,7 @@
         <asp:Label ID="WarningText" runat="server" Font-Size="X-Large" ForeColor="Red" Text="Not a Valid FCC Code" Visible="False"></asp:Label>
         <br />
         <br />
-        <asp:Button ID="FCCBttn" runat="server" OnClick="FCCBttn_Click" Text="Ener FCC Code" />
+        <asp:Button ID="FCCBttn" runat="server" OnClick="FCCBttn_Click" Text="Enter FCC Code" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Button ID="GoToFCCLogBttn" runat="server" OnClick="GoToFCCLogBttn_Click" Text="Go to FCC Log" />
         <asp:Label ID="Label1" runat="server" style="z-index: 1; left: 425px; top: 333px; position: absolute" Text="Comments:"></asp:Label>

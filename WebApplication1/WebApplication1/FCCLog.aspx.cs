@@ -53,7 +53,7 @@ namespace WebApplication1
             // On button click, it will attempt to redirect to the homepage
             try
             {
-                Response.Redirect("~/Default.aspx");
+                Response.Redirect("~/InputTime.aspx");
             }
             catch (Exception ex)
             {
