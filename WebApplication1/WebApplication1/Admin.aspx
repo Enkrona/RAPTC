@@ -49,10 +49,12 @@
 				Generated data table displays students&nbsp; shift date, time, and clockin times.&nbsp;&nbsp; </p>
 			
         </div>
-		<asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Height="492px" style="margin-left: 6px; margin-top: 33px" Width="374px">
+		<asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Height="492px" style="margin-left: 6px; margin-top: 33px" Width="374px" AutoGenerateColumns="False" DataSourceID="LinqDataSource1">
 			<AlternatingRowStyle BackColor="White" />
 			<Columns>
-				<asp:BoundField />
+				<asp:BoundField DataField="UserID" HeaderText="UserID" SortExpression="UserID" />
+			    <asp:BoundField DataField="Time" HeaderText="Time" SortExpression="Time" />
+                <asp:BoundField DataField="Comments" HeaderText="Comments" SortExpression="Comments" />
 			</Columns>
 			<EditRowStyle BackColor="#7C6F57" />
 			<FooterStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
@@ -65,6 +67,8 @@
 			<SortedDescendingCellStyle BackColor="#D4DFE1" />
 			<SortedDescendingHeaderStyle BackColor="#15524A" />
 		</asp:GridView>
+        <asp:LinqDataSource ID="LinqDataSource1" runat="server" ContextTypeName="WebApplication1.webtimeclockEntities" EntityTypeName="" TableName="activeusers">
+        </asp:LinqDataSource>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<!-- <img src="logo.png" align="right" style="height: 578px; width: 699px; margin-left: 4px; float: left;" /> -->
 		<br />
