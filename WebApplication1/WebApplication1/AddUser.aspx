@@ -6,6 +6,8 @@
 <head runat="server">
     <title></title>
 </head>
+
+
 <body bgcolor="#006747">
     <form id="form1" runat="server">
         <div>
@@ -38,10 +40,15 @@
             </asp:DropDownList>
             <br />
             <br />
-            <asp:Label ID="WarningLbl" runat="server" Font-Bold="True" Font-Overline="False" Font-Size="X-Large" Font-Underline="True" ForeColor="Red" Text="User already exists" Visible="False"></asp:Label>
+            <asp:Label ID="WarningLbl" runat="server" Font-Bold="True" Font-Overline="False" Font-Size="XX-Large" Font-Underline="True" ForeColor="Red" Text="User already exists" Visible="False"></asp:Label>
             <br />
             <br />
             <asp:Button ID="CreateUserBttn" runat="server" OnClick="CreateUserBttn_Click" Text="Create User" />
+
+            <br />
+            <br />
+            <asp:Button ID="SuccessBttn" runat="server" OnClick="SuccessUserBttn_Click" Text="Ok" Visible="False" />
+
 
 
         </div>

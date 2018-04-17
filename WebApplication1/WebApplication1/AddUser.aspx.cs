@@ -26,6 +26,11 @@ namespace WebApplication1
             }
         }
 
+        bool ReturnValue()
+        {
+            return false;
+        }
+
         protected void CreateUserBttn_Click(object sender, EventArgs e)
         {
             webtimeclockEntities db = new webtimeclockEntities();
@@ -39,18 +44,18 @@ namespace WebApplication1
             try
             { // check if userid is in users table
                 Boolean usercheck1 = (from use in db.users
-                                    where use.UserID == sNum
-                                    select use).Count() == 1;
-                
+                                      where use.UserID == sNum
+                                      select use).Count() == 1;
+
                 // if it is, display warning
                 if (usercheck1)
                 {
                     WarningLbl.Visible = true;
                     return;
                 }
-                
+
                 // if not, create new user
-                
+
                 // have to add domain user name check
                 // ex: s123 is not a valid user
 
@@ -66,23 +71,43 @@ namespace WebApplication1
                 db.SaveChanges();
 
                 Boolean usercheck2 = (from use in db.users
-                                    where use.UserID == sNum
-                                    select use).Count() == 1;
+                                      where use.UserID == sNum
+                                      select use).Count() == 1;
+
+                Boolean success = false;
+
+                String userAdded = "User " + fName + " was added successfully!  Please press OK on the page to be redirected!";
+
+                ClientScript.RegisterStartupScript(this.GetType(), "User Added", "alert('" + userAdded + "');", true);
+
 
                 // if it is, redirect to admin
                 if (usercheck2)
                 {
-                    WarningLbl.Text = "User was added!";
+                    WarningLbl.Text = "User was added! Press OK to be redirected to the admin page";
                     WarningLbl.Visible = true;
 
-                    // add a timer?
-                    Response.Redirect("~/Admin.aspx");
+                    success = true;
+
+                    if (success == true)
+                    {
+                        CreateUserBttn.Visible = false;
+
+                        SuccessBttn.Visible = true;
+
+                    }
+
                 }
+
                 else
                 {
+
                     WarningLbl.Text = "User was not added";
                     WarningLbl.Visible = true;
                 }
+
+
+
 
 
             }
@@ -102,6 +127,14 @@ namespace WebApplication1
             //       Response.Redirect("~/Admin.aspx") 
             //    else
             //       WarningLbl.Visible = true; 
+
+        }
+
+
+        protected void SuccessUserBttn_Click(object sender, EventArgs e)
+        {
+            // Redirect
+            Response.Redirect("~/Admin.aspx");
 
         }
     }

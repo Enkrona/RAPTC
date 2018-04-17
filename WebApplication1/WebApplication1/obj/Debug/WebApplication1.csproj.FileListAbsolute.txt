@@ -52,7 +52,6 @@ C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebAppl
 C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
 C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\bin\EntityFramework.xml
-C:\Users\Bradley\Documents\RAPTC\RAPTC\WebApplication1\WebApplication1\bin\EntityFramework.dll
 C:\Users\Bradley\Documents\RAPTC\RAPTC\WebApplication1\WebApplication1\bin\EntityFramework.xml
 C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
 C:\Users\s524063\Desktop\RAPTC\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml
@@ -75,3 +74,4 @@ C:\Users\s523368\Desktop\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebAppl
 C:\Users\s523368\Desktop\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
 C:\Users\s523368\Desktop\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\s523368\Desktop\RAPTC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\Bradley\Documents\RAPTC\RAPTC\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml
