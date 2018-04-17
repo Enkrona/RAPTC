@@ -40,7 +40,7 @@
             </asp:DropDownList>
             <br />
             <br />
-            <asp:Label ID="WarningLbl" runat="server" Font-Bold="True" Font-Overline="False" Font-Size="XX-Large" Font-Underline="True" ForeColor="Red" Text="User already exists" Visible="False"></asp:Label>
+            <asp:Label ID="WarningLbl" runat="server" Font-Bold="True" Font-Overline="False" Font-Size="XX-Large" Font-Underline="False" ForeColor="Red" Text="User already exists" Visible="False"></asp:Label>
             <br />
             <br />
             <asp:Button ID="CreateUserBttn" runat="server" OnClick="CreateUserBttn_Click" Text="Create User" />

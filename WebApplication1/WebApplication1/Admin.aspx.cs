@@ -54,5 +54,37 @@ namespace WebApplication1
             // Add User Button
             Response.Redirect("~/AddUser.aspx");
         }
+
+        protected void InputTimeBttn_Click(object sender, EventArgs e)
+        {
+            //
+            Response.Redirect("~/InputTime.aspx");
+        }
+
+        protected void ViewActiveUsersBttn_Click(object sender, EventArgs e)
+        {
+            // this works sort of, help me plz
+            webtimeclockEntities db = new webtimeclockEntities();
+
+            var au = (from user in db.activeusers
+                       select user);
+
+            string test = "";
+            
+            foreach (activeuser item in au)
+            {
+                test += item.UserID.ToString();
+            }
+
+            /*
+            foreach (activeuser item in au)
+            {
+                ClientScript.RegisterArrayDeclaration("userids ", item.ToString());
+            }*/
+
+            /*ClientScript.RegisterStartupScript(this.GetType(), "Active Users", "<script language='javascript'>alert(userids);</script>");*/
+
+            ClientScript.RegisterStartupScript(this.GetType(), "Active Users", "alert('" + test + "');", true);
+        }
     }
 }

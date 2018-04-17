@@ -49,6 +49,9 @@
 				Generated data table displays students&nbsp; shift date, time, and clockin times.&nbsp;&nbsp; </p>
 			
         </div>
+
+        <%-- start comment
+        
 		<asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Height="478px" style="margin-left: 6px; margin-top: 32px; margin-right: 22px;" Width="397px" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataSourceID="LinqDataSource1">
 			<AlternatingRowStyle BackColor="White" />
 			<Columns>
@@ -71,6 +74,9 @@
 		</asp:GridView>
         <asp:LinqDataSource ID="LinqDataSource1" runat="server" ContextTypeName="WebApplication1.webtimeclockEntities" EntityTypeName="" TableName="activeusers">
         </asp:LinqDataSource>
+
+            end comment --%>
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<!-- <img src="logo.png" align="right" style="height: 578px; width: 699px; margin-left: 4px; float: left;" /> -->
 		<br />
@@ -83,6 +89,10 @@
 		&nbsp;&nbsp;&nbsp;&nbsp; <asp:Button ID="AddUsrBttn" runat="server" OnClick="Button1_Click" Text="Add User" Height="51px" Width="92px" />
 
 			<br />
+			<br />
+        <asp:Button ID="InputTimeBttn" runat="server" OnClick="InputTimeBttn_Click" Text="Input Time" Height="51px" Width="92px" />
+        <br />
+        <asp:Button ID="ViewActiveUsersBttn" runat="server" OnClick="ViewActiveUsersBttn_Click" Text="View Active Users" Height="51px" Width="120px" />
 			<br />
         <asp:Button ID="logoutBttn" runat="server" OnClick="Button4_Click" Text="Logout" />
 
