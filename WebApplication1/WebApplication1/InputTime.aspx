@@ -56,6 +56,24 @@
             .auto-style1 {
                 width: 107px;
             }
+            .button {
+                background-color: #4CAF50;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                border-radius: 8px;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                -webkit-transition-duration: 0.4s; /* Safari */
+                transition-duration: 0.4s;
+            }
+            .button2:hover {
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+            }   
         </style>
     </head>
 
@@ -85,14 +103,14 @@
                     <h7 style="width: 300px; color: white; align-self:center"><script> document.write(new Date().toLocaleDateString()); </script></h7> 
                 </td>
                 <td id="centercol" style="align-content:center; column-width:auto">                    
-                    <asp:Button ID="Clock" runat="server" OnClick="Button1_Click" style="z-index: 1; align-self:center" Text="ClockIn" />
+                    <asp:Button class="button button2" ID="Clock" runat="server" OnClick="Button1_Click" style="z-index: 1; align-self:center" Text="ClockIn" />
                 </td>
             </tr>
         </tbody>
     </table>
 
             
-            <asp:Button ID="ViewReportBttn" runat="server" OnClick="ViewReportBttn_Click" Text="View Time Report" />
+            <asp:Button class="button button2" ID="ViewReportBttn" runat="server" OnClick="ViewReportBttn_Click" Text="View Time Report" />
         <br />
         <br />
         <br />
@@ -101,9 +119,9 @@
         <asp:Label ID="WarningText" runat="server" Font-Size="X-Large" ForeColor="Red" Text="Not a Valid FCC Code" Visible="False"></asp:Label>
         <br />
         <br />
-        <asp:Button ID="FCCBttn" runat="server" OnClick="FCCBttn_Click" Text="Enter FCC Code" />
+        <asp:Button class="button button2" ID="FCCBttn" runat="server" OnClick="FCCBttn_Click" Text="Enter FCC Code" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Button ID="GoToFCCLogBttn" runat="server" OnClick="GoToFCCLogBttn_Click" Text="Go to FCC Log" />
+        <asp:Button class="button button2" ID="GoToFCCLogBttn" runat="server" OnClick="GoToFCCLogBttn_Click" Text="Go to FCC Log" />
         <asp:Label ID="Label1" runat="server" style="z-index: 1; left: 425px; top: 333px; position: absolute" Text="Comments:"></asp:Label>
         <br />
         <br />
@@ -111,7 +129,7 @@
         <asp:TextBox ID="Comments" runat="server" MaxLength="200" style="z-index: 1; left: 419px; top: 369px; position: absolute; width: 278px"></asp:TextBox>
         <br />
         <br />
-        <asp:Button ID="logoutBttn" runat="server" OnClick="logoutBttn_Click" Text="Logout" />
+        <asp:Button class="button button2" ID="logoutBttn" runat="server" OnClick="logoutBttn_Click" Text="Logout" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     </form>
 </body>

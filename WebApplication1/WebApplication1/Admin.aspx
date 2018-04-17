@@ -45,7 +45,24 @@
 			width: 405px;
 			float: left;
 		}
-				
+		.button {
+                background-color: #4CAF50;
+                border: none;
+                color: white;
+                border-radius: 8px;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                -webkit-transition-duration: 0.4s; /* Safari */
+                transition-duration: 0.4s;
+            }
+            .button2:hover {
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+            }   		
 		</style>
 </head>
 <body bgcolor="#006747">
@@ -113,18 +130,18 @@
 
         <div id="buttons" runat="server">
 			<br />
-			<asp:Button ID="viewReportsButton" runat="server" Text="View Reports" Width="92px" OnClick="editUsrBttn_Click" Height="51px" style="margin-left: 0px; margin-top: 0px;" />
+			<asp:Button class="button button2" ID="viewReportsButton" runat="server" Text="View Reports" Width="92px" OnClick="editUsrBttn_Click" Height="51px" style="margin-left: 0px; margin-top: 0px;" />
 	
-		&nbsp;&nbsp;&nbsp;&nbsp; <asp:Button ID="editUsrBttn" runat="server" Text="Edit User" Width="92px" OnClick="editUsrBttn_Click" Height="51px" />
-		&nbsp;&nbsp;&nbsp;&nbsp; <asp:Button ID="AddUsrBttn" runat="server" OnClick="Button1_Click" Text="Add User" Height="51px" Width="92px" />
+		&nbsp;&nbsp;&nbsp;&nbsp; <asp:Button class="button button2" ID="editUsrBttn" runat="server" Text="Edit User" Width="92px" OnClick="editUsrBttn_Click" Height="51px" />
+		&nbsp;&nbsp;&nbsp;&nbsp; <asp:Button class="button button2" ID="AddUsrBttn" runat="server" OnClick="Button1_Click" Text="Add User" Height="51px" Width="92px" />
 
 			<br />
 			<br />
-        <asp:Button ID="InputTimeBttn" runat="server" OnClick="InputTimeBttn_Click" Text="Input Time" Height="51px" Width="92px" />
+        <asp:Button class="button button2" ID="InputTimeBttn" runat="server" OnClick="InputTimeBttn_Click" Text="Input Time" Height="51px" Width="92px" />
         <br />
-        <asp:Button ID="ViewActiveUsersBttn" runat="server" OnClick="ViewActiveUsersBttn_Click" Text="View Active Users" Height="51px" Width="120px" />
+        <asp:Button class="button button2" ID="ViewActiveUsersBttn" runat="server" OnClick="ViewActiveUsersBttn_Click" Text="View Active Users" Height="51px" Width="120px" />
 			<br />
-        <asp:Button ID="logoutBttn" runat="server" OnClick="Button4_Click" Text="Logout" />
+        <asp:Button class="button button2" ID="logoutBttn" runat="server" OnClick="Button4_Click" Text="Logout" />
 
 			<br />
 			<br />
