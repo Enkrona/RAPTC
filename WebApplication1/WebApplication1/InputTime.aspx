@@ -5,32 +5,31 @@
      <head> 
         <script type="text/javascript">
 
-            function updateClock ( )
-            {
-              var currentTime = new Date ( );
+            function updateClock() {
+                var currentTime = new Date();
 
-              var currentHours = currentTime.getHours ( );
-              var currentMinutes = currentTime.getMinutes ( );
-              var currentSeconds = currentTime.getSeconds ( );
+                var currentHours = currentTime.getHours();
+                var currentMinutes = currentTime.getMinutes();
+                var currentSeconds = currentTime.getSeconds();
 
-              // Pad the minutes and seconds with leading zeros, if required
-              currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;
-              currentSeconds = ( currentSeconds < 10 ? "0" : "" ) + currentSeconds;
+                // Pad the minutes and seconds with leading zeros, if required
+                currentMinutes = (currentMinutes < 10 ? "0" : "") + currentMinutes;
+                currentSeconds = (currentSeconds < 10 ? "0" : "") + currentSeconds;
 
-              // Choose either "AM" or "PM" as appropriate
-              var timeOfDay = ( currentHours < 12 ) ? "AM" : "PM";
+                // Choose either "AM" or "PM" as appropriate
+                var timeOfDay = (currentHours < 12) ? "AM" : "PM";
 
-              // Convert the hours component to 12-hour format if needed
-              currentHours = ( currentHours > 12 ) ? currentHours - 12 : currentHours;
+                // Convert the hours component to 12-hour format if needed
+                currentHours = (currentHours > 12) ? currentHours - 12 : currentHours;
 
-              // Convert an hours component of "0" to "12"
-              currentHours = ( currentHours == 0 ) ? 12 : currentHours;
+                // Convert an hours component of "0" to "12"
+                currentHours = (currentHours == 0) ? 12 : currentHours;
 
-              // Compose the string for display
-              var currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
+                // Compose the string for display
+                var currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
 
-              // Update the time display
-              document.getElementById("clock").firstChild.nodeValue = currentTimeString;
+                // Update the time display
+                document.getElementById("clock").firstChild.nodeValue = currentTimeString;
             }
 
         </script>
@@ -41,6 +40,21 @@
             #center {
                 text-align: center;
                 background-color: gold;
+            }
+            #centercol {
+                text-align:center;
+                align-content:center;
+                align-items:center;
+                align-self:center;
+            }
+            #leftcol {
+                text-align:left;
+                align-content:flex-start;
+                align-items:flex-start;
+                align-self:flex-start;
+            }
+            .auto-style1 {
+                width: 107px;
             }
         </style>
     </head>
@@ -53,19 +67,31 @@
         <h1 id="center">Welcome back, <%=name()%>!</h1>
     </header>
     <table>
+        <colgroup>
+            <col width="300px">
+            <col width="700px" />
+        </colgroup>
         <tbody>
             <tr>
-                <td style="width:300px">
-                    <font size="20" color="white" > <p id="clock">10:15:23 AM</p> 
-                    <p style="width: 317px"><script> document.write(new Date().toLocaleDateString()); </script></p> 
-                    <asp:Label ID="ClockedinTime" runat="server" style="z-index: 1; left: 351px; top: 109px; position: absolute"></asp:Label>
-                    </font>
+                <td id="leftcol" style="align-content:center; column-width:300px">
+                    <h1 id="clock" style="color: white; font-size: 40px; width">10:15:23 AM</h1>
+                </td>
+                <td id="centercol" style="align-content:center; column-width:auto">
+                    <asp:Label ID="ClockedinTime" runat="server" style="z-index: 1; align-self:center; color: white; font-size: 40px"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td id="centercol" style="align-content:center; column-width:300px">
+                    <h7 style="width: 300px; color: white; align-self:center"><script> document.write(new Date().toLocaleDateString()); </script></h7> 
+                </td>
+                <td id="centercol" style="align-content:center; column-width:auto">                    
+                    <asp:Button ID="Clock" runat="server" OnClick="Button1_Click" style="z-index: 1; align-self:center" Text="ClockIn" />
                 </td>
             </tr>
         </tbody>
     </table>
 
-            <asp:Button ID="Clock" runat="server" OnClick="Button1_Click" style="z-index: 1; left: 214px; top: 227px; position: absolute" Text="ClockIn" />
+            
             <asp:Button ID="ViewReportBttn" runat="server" OnClick="ViewReportBttn_Click" Text="View Time Report" />
         <br />
         <br />
