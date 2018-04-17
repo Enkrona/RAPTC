@@ -58,7 +58,7 @@
             <!-- This is me trying to get the "Official" NW Font. This will be fixed in a css update once core functionality is in place -->
             <font color="white" font-family="Futara"> Welcome to the X106 Radio and Practicum Time Clock (RAPTC)</font>
         </h1>
-        <img src="logo.png" align="right" height="400" width="800" />
+        <img src="x106logo.png" align="right" height="400" width="800" />
         <div id="date">
         </div>
         <div id="container"> 
