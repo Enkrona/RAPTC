@@ -42,20 +42,22 @@
 </head>
 <body bgcolor="#006747">
     	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<h1 class="auto-style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Admin</h1>
+		<h1 class="auto-style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Adminstrator </h1>
     <form id="form1" runat="server">
         <div>
         	<p class="auto-style1">
 				Generated data table displays students&nbsp; shift date, time, and clockin times.&nbsp;&nbsp; </p>
 			
         </div>
-		<asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Height="492px" style="margin-left: 6px; margin-top: 33px" Width="374px" AutoGenerateColumns="False" DataSourceID="LinqDataSource1">
+		<asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Height="478px" style="margin-left: 6px; margin-top: 32px; margin-right: 22px;" Width="397px" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataSourceID="LinqDataSource1">
 			<AlternatingRowStyle BackColor="White" />
 			<Columns>
-				<asp:BoundField DataField="UserID" HeaderText="UserID" SortExpression="UserID" />
-			    <asp:BoundField DataField="Time" HeaderText="Time" SortExpression="Time" />
-                <asp:BoundField DataField="Comments" HeaderText="Comments" SortExpression="Comments" />
-			</Columns>
+                <asp:CommandField ShowSelectButton="True" />
+                <asp:DynamicField DataField="UserID" HeaderText="UserID" />
+                <asp:DynamicField DataField="Time" HeaderText="Time" />
+                <asp:CommandField ShowDeleteButton="True" />
+                <asp:DynamicField DataField="Comments" HeaderText="Comments" />
+            </Columns>
 			<EditRowStyle BackColor="#7C6F57" />
 			<FooterStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
 			<HeaderStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
@@ -75,34 +77,36 @@
 	
 			<br />
 			<br />
+			<asp:Button ID="viewReportsButton" runat="server" Text="View Reports" Width="92px" OnClick="editUsrBttn_Click" Height="51px" style="margin-left: 0px; margin-top: 0px;" />
+	
+		&nbsp;&nbsp;&nbsp;&nbsp; <asp:Button ID="editUsrBttn" runat="server" Text="Edit User" Width="92px" OnClick="editUsrBttn_Click" Height="51px" />
+		&nbsp;&nbsp;&nbsp;&nbsp; <asp:Button ID="AddUsrBttn" runat="server" OnClick="Button1_Click" Text="Add User" Height="51px" Width="92px" />
+
 			<br />
 			<br />
+        <asp:Button ID="logoutBttn" runat="server" OnClick="Button4_Click" Text="Logout" />
+
 			<br />
 			<br />
 			<br />
 			<br />
 			<br />
 	
-		<br />
-&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
-&nbsp;<asp:TextBox ID="TextBox1" runat="server" Height="31px" Width="277px"></asp:TextBox>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;<br />
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		
 		<br />
 &nbsp;&nbsp;&nbsp;&nbsp;
 		&nbsp;&nbsp;&nbsp;
-		<asp:Button ID="editUsrBttn" runat="server" Text="Edit User" Width="84px" OnClick="editUsrBttn_Click" />
 		<br />
         <br />
-		<br />
-
-	    <asp:Button ID="AddUsrBttn" runat="server" OnClick="Button1_Click" Text="Add User" />
+		&nbsp;<br />
 
 	    <br />
         <br />
-        <asp:Button ID="logoutBttn" runat="server" OnClick="Button4_Click" Text="Logout" />
 
 	</form>
 </body>
