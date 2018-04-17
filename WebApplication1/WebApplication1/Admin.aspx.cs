@@ -4,11 +4,19 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Microsoft.VisualBasic;
+using System.Collections;
+using System.Data;
+using System.Diagnostics;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace WebApplication1
 {
     public partial class Admin : System.Web.UI.Page
     {
+        public static ArrayList users = new ArrayList();
+
         protected void Page_Load(object sender, EventArgs e)
         {
             try
@@ -63,18 +71,25 @@ namespace WebApplication1
 
         protected void ViewActiveUsersBttn_Click(object sender, EventArgs e)
         {
-            // this works sort of, help me plz
+            
             webtimeclockEntities db = new webtimeclockEntities();
 
+            //  Make the label and data box visible! 
+            ViewDataBox.Visible = true;
+            LoggedInUsersLbl.Visible = true;
+
+            string SID = "";
+            
             var au = (from user in db.activeusers
                        select user);
 
-            string test = "";
             
             foreach (activeuser item in au)
             {
-                test += item.UserID.ToString();
+                SID += item.UserID.ToString() + " \n ";
+                ViewDataBox.Items.Add((SID));
             }
+
 
             /*
             foreach (activeuser item in au)
@@ -84,7 +99,9 @@ namespace WebApplication1
 
             /*ClientScript.RegisterStartupScript(this.GetType(), "Active Users", "<script language='javascript'>alert(userids);</script>");*/
 
-            ClientScript.RegisterStartupScript(this.GetType(), "Active Users", "alert('" + test + "');", true);
+            //  Old Message Box Prompt
+            //ClientScript.RegisterStartupScript(this.GetType(), "Active Users", "alert('" + test + "');", true);
+
         }
     }
 }
