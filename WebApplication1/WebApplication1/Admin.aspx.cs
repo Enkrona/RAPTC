@@ -71,8 +71,9 @@ namespace WebApplication1
 
         protected void ViewActiveUsersBttn_Click(object sender, EventArgs e)
         {
-            
-            webtimeclockEntities db = new webtimeclockEntities();
+
+            Response.Redirect("~/ViewActiveUsers.aspx");
+            /*webtimeclockEntities db = new webtimeclockEntities();
 
             //  Make the label and data box visible! 
             ViewDataBox.Visible = true;
@@ -91,13 +92,13 @@ namespace WebApplication1
             }
 
 
-            /*
+            
             foreach (activeuser item in au)
             {
                 ClientScript.RegisterArrayDeclaration("userids ", item.ToString());
-            }*/
+            }
 
-            /*ClientScript.RegisterStartupScript(this.GetType(), "Active Users", "<script language='javascript'>alert(userids);</script>");*/
+            ClientScript.RegisterStartupScript(this.GetType(), "Active Users", "<script language='javascript'>alert(userids);</script>");*/
 
             //  Old Message Box Prompt
             //ClientScript.RegisterStartupScript(this.GetType(), "Active Users", "alert('" + test + "');", true);
