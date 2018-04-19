@@ -80,7 +80,6 @@
         </style>
     </head>
     <body onload="updateClock(); setInterval(&#39;updateClock()&#39;, 1000 )" bgcolor="#006747">
-        <h1> 
             <!-- This is me trying to get the "Official" NW Font. This will be fixed in a css update once core functionality is in place -->
             <h1 id="center">Welcome to the X106 Radio and Practicum Time Clock</h1>
         <img src="x106logo.png" align="right" height="400" width="800" />
