@@ -49,7 +49,7 @@
                 border-style: none;
             border-color: inherit;
             border-width: medium;
-            background-color: #4CAF50;
+            background-color: #006714;
                 color: white;
                 border-radius: 8px;
                 padding: 15px 32px;
@@ -109,7 +109,8 @@
 	
 		 <asp:Button class="button button2" ID="editUsrBttn" runat="server" style="font-family: 'Open Sans', sans-serif;" Text="Edit Users" Width="169px" OnClick="editUsrBttn_Click" Height="51px" />
 		&nbsp;&nbsp;&nbsp;&nbsp; <asp:Button class="button button2" ID="AddUsrBttn" runat="server" style="font-family: 'Open Sans', sans-serif;" OnClick="Button1_Click" Text="Add User" Height="51px" Width="169px" />
-            <asp:Button ID="editShiftsBttn" runat="server" OnClick="editShiftsBttn_Click" Text="Edit Shifts" />
+            &nbsp;&nbsp;&nbsp;
+            <asp:Button class="button button2" ID="editShiftsBttn" runat="server" OnClick="editShiftsBttn_Click" style="font-family: 'Open Sans', sans-serif;" Text="Edit Shifts" Width="169px"  Height="51px"/>
 			<br />
 			<br />
         <asp:Button class="button button2" ID="InputTimeBttn" style="font-family: 'Open Sans', sans-serif;" runat="server" OnClick="InputTimeBttn_Click" Text="Input Time" Height="51px" Width="169px" />

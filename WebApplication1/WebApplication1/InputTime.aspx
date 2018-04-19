@@ -112,7 +112,7 @@
                     <h2 style="width: 300px; color: white; align-self:center; font-family: 'Open Sans', sans-serif;"><script style="font-family: 'Open Sans', sans-serif;"> document.write(new Date().toLocaleDateString()); </script></h2> 
                 </td>
                 <td id="centercol" style="align-content:center; column-width:auto">                    
-                    <asp:Button class="button button2" ID="Clock" runat="server" OnClick="Button1_Click" style="z-index: 1; align-self:center; font-family: 'Open Sans', sans-serif;" Text="ClockIn" />
+                    <asp:Button class="button button2" ID="Clock" runat="server" OnClick="Button1_Click" style="z-index: 1; align-self:center; font-family: 'Open Sans', sans-serif;" Text="Clock In" />
                 </td>
             </tr>
             <tr>
