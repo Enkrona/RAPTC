@@ -142,5 +142,10 @@ namespace WebApplication1
                 return Time;
             }
         }
+
+        protected void RefreshBttn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/ViewActiveUsers.aspx");
+        }
     }
 }
