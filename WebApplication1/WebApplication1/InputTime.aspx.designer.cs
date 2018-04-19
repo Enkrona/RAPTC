@@ -49,13 +49,13 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.Button ViewReportBttn;
         
         /// <summary>
-        /// FCCtxtBx control.
+        /// Comments control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox FCCtxtBx;
+        protected global::System.Web.UI.WebControls.TextBox Comments;
         
         /// <summary>
         /// WarningText control.
@@ -67,6 +67,15 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.Label WarningText;
         
         /// <summary>
+        /// FCCtxtBx control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox FCCtxtBx;
+        
+        /// <summary>
         /// FCCBttn control.
         /// </summary>
         /// <remarks>
@@ -76,33 +85,6 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.Button FCCBttn;
         
         /// <summary>
-        /// GoToFCCLogBttn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button GoToFCCLogBttn;
-        
-        /// <summary>
-        /// Label1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
-        
-        /// <summary>
-        /// Comments control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Comments;
-        
-        /// <summary>
         /// logoutBttn control.
         /// </summary>
         /// <remarks>
@@ -110,5 +92,14 @@ namespace WebApplication1 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button logoutBttn;
+        
+        /// <summary>
+        /// GoToFCCLogBttn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button GoToFCCLogBttn;
     }
 }
