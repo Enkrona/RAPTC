@@ -69,6 +69,7 @@
     <Content Include="docs\MySqlParameter.xml" />
     <Content Include="docs\MySqlParameterCollection.xml" />
     <Content Include="docs\MySqlTransaction.xml" />
+    <Content Include="EditShifts.aspx" />
     <Content Include="EditUser.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="FCCLog.aspx" />
@@ -121,6 +122,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditShifts.aspx.cs">
+      <DependentUpon>EditShifts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditShifts.aspx.designer.cs">
+      <DependentUpon>EditShifts.aspx</DependentUpon>
     </Compile>
     <Compile Include="EditUser.aspx.cs">
       <DependentUpon>EditUser.aspx</DependentUpon>
