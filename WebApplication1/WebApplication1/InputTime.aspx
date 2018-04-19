@@ -3,6 +3,8 @@
 <!DOCTYPE html>
 <html>
      <head> 
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+         <title>Time Clock</title>
         <script type="text/javascript">
 
             function updateClock() {
@@ -89,7 +91,7 @@
     <form id="form1" runat="server">
 
     <header>
-        <h1 id="center">Welcome back, <%=name()%>!</h1>
+        <h1 id="center" style="font-family: 'Open Sans', sans-serif;">Welcome back, <%=name()%>!</h1>
     </header>
     <table>
         <colgroup>
@@ -99,23 +101,23 @@
         <tbody>
             <tr>
                 <td id="leftcol" style="align-content:center; column-width:300px">
-                    <h1 id="clock" style="color: white; font-size: 40px; width">10:15:23 AM</h1>
+                    <h1 id="clock" style="color: white; font-size: 40px; font-family: 'Open Sans', sans-serif;">10:15:23 AM</h1>
                 </td>
                 <td id="centercol" style="align-content:center; column-width:auto">
-                    <asp:Label ID="ClockedinTime" runat="server" style="z-index: 1; align-self:center; color: white; font-size: 40px"></asp:Label>
+                    <asp:Label ID="ClockedinTime" runat="server" style="z-index: 1; align-self:center; color: white; font-size: 40px; font-family: 'Open Sans', sans-serif;"></asp:Label>
                 </td>
             </tr>
             <tr>
                 <td id="leftcol" style="align-content:center; column-width:300px">
-                    <h2 style="width: 300px; color: white; align-self:center"><script> document.write(new Date().toLocaleDateString()); </script></h2> 
+                    <h2 style="width: 300px; color: white; align-self:center; font-family: 'Open Sans', sans-serif;"><script style="font-family: 'Open Sans', sans-serif;"> document.write(new Date().toLocaleDateString()); </script></h2> 
                 </td>
                 <td id="centercol" style="align-content:center; column-width:auto">                    
-                    <asp:Button class="button button2" ID="Clock" runat="server" OnClick="Button1_Click" style="z-index: 1; align-self:center" Text="ClockIn" />
+                    <asp:Button class="button button2" ID="Clock" runat="server" OnClick="Button1_Click" style="z-index: 1; align-self:center; font-family: 'Open Sans', sans-serif;" Text="ClockIn" />
                 </td>
             </tr>
             <tr>
                 <td id="leftcol" style="align-content:center; column-width:300px">
-                    <asp:Button class="button button2" ID="ViewReportBttn" runat="server" OnClick="ViewReportBttn_Click" Text="View Time Report" />
+                    <asp:Button class="button button2" ID="ViewReportBttn" runat="server" OnClick="ViewReportBttn_Click"  style="font-family: 'Open Sans', sans-serif;" Text="View Time Report" />
                 </td>
                 <td id="centercol" style="align-content:center; column-width:auto">
                     <asp:TextBox ID="Comments" runat="server" placeholder="Add a comment..." MaxLength="200" style="z-index: 1;width: 278px"></asp:TextBox>
@@ -143,7 +145,7 @@
                 </td>
                 <td id="leftcol" style="align-content:center; column-width:300px"></td>
                 <td id="rightcol" style="align-content:flex-end; padding-left:5em; column-width:auto">
-                    <asp:Label ID="WarningText" runat="server" Font-Size="X-Large" ForeColor="Red" Text="Not a Valid FCC Code" Visible="False"></asp:Label>
+                    <asp:Label ID="WarningText" style="font-family: 'Open Sans', sans-serif;" runat="server" Font-Size="X-Large" ForeColor="Red" Text="Not a Valid FCC Code" Visible="False"></asp:Label>
                 </td>
             </tr>
             <tr>
@@ -151,7 +153,7 @@
                 </td>
                 <td id="leftcol" style="align-content:center; column-width:300px"></td>
                 <td id="rightcol" style="align-content:flex-end; padding-left:5em; column-width:auto">
-                    <asp:TextBox ID="FCCtxtBx" placeholder="Enter Code..." runat="server" OnTextChanged="FCCtxtBx_TextChanged" Width="230px"></asp:TextBox>
+                    <asp:TextBox ID="FCCtxtBx" style="font-family: 'Open Sans', sans-serif;" placeholder="Enter Code..." runat="server" OnTextChanged="FCCtxtBx_TextChanged" Width="230px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
@@ -159,16 +161,16 @@
                 </td>
                 <td id="leftcol" style="align-content:center; column-width:300px"></td>
                 <td id="rightcol" style="align-content:flex-end; padding-left:5em; column-width:auto">
-                    <asp:Button class="button button2" ID="FCCBttn" runat="server" OnClick="FCCBttn_Click" Text="Enter FCC Code" />
+                    <asp:Button class="button button2" style="font-family: 'Open Sans', sans-serif;" ID="FCCBttn" runat="server" OnClick="FCCBttn_Click" Text="Enter FCC Code" />
                 </td>
             </tr>
             <tr>
                 <td id="leftcol" style="align-content:center; column-width:300px">
-                    <asp:Button class="button button2" ID="logoutBttn" runat="server" OnClick="logoutBttn_Click" Text="Logout" />
+                    <asp:Button class="button button2" style="font-family: 'Open Sans', sans-serif;" ID="logoutBttn" runat="server" OnClick="logoutBttn_Click" Text="Logout" />
                 </td>
                 <td id="leftcol" style="align-content:center; column-width:300px"></td>
                 <td id="rightcol" style="align-content:flex-end; padding-left:15em; column-width:auto">
-                    <asp:Button class="button button2" ID="GoToFCCLogBttn" runat="server" OnClick="GoToFCCLogBttn_Click" Text="Go to FCC Log" />
+                    <asp:Button class="button button2" style="font-family: 'Open Sans', sans-serif;" ID="GoToFCCLogBttn" runat="server" OnClick="GoToFCCLogBttn_Click" Text="Go to FCC Log" />
                 </td>
             </tr>
         </tbody>
