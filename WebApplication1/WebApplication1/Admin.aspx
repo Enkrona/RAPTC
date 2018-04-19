@@ -107,9 +107,9 @@
 			<br />
 			
 	
-		 <asp:Button class="button button2" ID="editUsrBttn" runat="server" style="font-family: 'Open Sans', sans-serif;" Text="Edit User" Width="169px" OnClick="editUsrBttn_Click" Height="51px" />
+		 <asp:Button class="button button2" ID="editUsrBttn" runat="server" style="font-family: 'Open Sans', sans-serif;" Text="Edit Users" Width="169px" OnClick="editUsrBttn_Click" Height="51px" />
 		&nbsp;&nbsp;&nbsp;&nbsp; <asp:Button class="button button2" ID="AddUsrBttn" runat="server" style="font-family: 'Open Sans', sans-serif;" OnClick="Button1_Click" Text="Add User" Height="51px" Width="169px" />
-
+            <asp:Button ID="editShiftsBttn" runat="server" OnClick="editShiftsBttn_Click" Text="Edit Shifts" />
 			<br />
 			<br />
         <asp:Button class="button button2" ID="InputTimeBttn" style="font-family: 'Open Sans', sans-serif;" runat="server" OnClick="InputTimeBttn_Click" Text="Input Time" Height="51px" Width="169px" />

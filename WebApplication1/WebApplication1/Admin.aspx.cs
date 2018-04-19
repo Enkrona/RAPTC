@@ -177,11 +177,11 @@ namespace WebApplication1
 
         }
 
-        protected void genreporttest_Click(object sender, EventArgs e)
+        protected void viewReportsButton_Click(object sender, EventArgs e)
         {
             string reportuser = UsersDDL.SelectedItem.Value;
             Session["uid"] = reportuser;
-            Response.Redirect("~/UserReportnon.aspx");
+            Response.Redirect("~/AdminUserReport.aspx");
         }
 
         internal class UsersDisp
@@ -213,10 +213,9 @@ namespace WebApplication1
             }
         }
 
-        protected void viewReportsButton_Click(object sender, EventArgs e)
+        protected void editShiftsBttn_Click(object sender, EventArgs e)
         {
-            string reportuser = UsersDDL.SelectedItem.Value;
-            Session["uid"] = reportuser;
+            Response.Redirect("~/EditShifts.aspx");
         }
     }
 }

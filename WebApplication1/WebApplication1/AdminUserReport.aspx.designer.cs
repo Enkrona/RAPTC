@@ -10,7 +10,7 @@
 namespace WebApplication1 {
     
     
-    public partial class Admin {
+    public partial class AdminUserReport {
         
         /// <summary>
         /// form1 control.
@@ -22,93 +22,102 @@ namespace WebApplication1 {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// LoggedInUsersLbl control.
+        /// radio_week control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LoggedInUsersLbl;
+        protected global::System.Web.UI.WebControls.RadioButton radio_week;
         
         /// <summary>
-        /// UsersDDL control.
+        /// radio_month control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList UsersDDL;
+        protected global::System.Web.UI.WebControls.RadioButton radio_month;
         
         /// <summary>
-        /// viewReportsButton control.
+        /// label_UserID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button viewReportsButton;
+        protected global::System.Web.UI.WebControls.Label label_UserID;
         
         /// <summary>
-        /// buttons control.
+        /// label_First control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl buttons;
+        protected global::System.Web.UI.WebControls.Label label_First;
         
         /// <summary>
-        /// editUsrBttn control.
+        /// label_Last control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button editUsrBttn;
+        protected global::System.Web.UI.WebControls.Label label_Last;
         
         /// <summary>
-        /// AddUsrBttn control.
+        /// label_TimeSpan control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button AddUsrBttn;
+        protected global::System.Web.UI.WebControls.Label label_TimeSpan;
         
         /// <summary>
-        /// editShiftsBttn control.
+        /// table_report control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button editShiftsBttn;
+        protected global::System.Web.UI.WebControls.Table table_report;
         
         /// <summary>
-        /// InputTimeBttn control.
+        /// label_timeWorked control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button InputTimeBttn;
+        protected global::System.Web.UI.WebControls.Label label_timeWorked;
         
         /// <summary>
-        /// ViewActiveUsersBttn control.
+        /// label_roundedTimeWorked control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ViewActiveUsersBttn;
+        protected global::System.Web.UI.WebControls.Label label_roundedTimeWorked;
         
         /// <summary>
-        /// logoutBttn control.
+        /// button_generate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button logoutBttn;
+        protected global::System.Web.UI.WebControls.Button button_generate;
+        
+        /// <summary>
+        /// Button1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }

@@ -48,6 +48,7 @@
   <ItemGroup>
     <Content Include="AddUser.aspx" />
     <Content Include="Admin.aspx" />
+    <Content Include="AdminUserReport.aspx" />
     <Content Include="bin\Cite.DomainAuthentication.dll" />
     <Content Include="bin\EntityFramework.dll" />
     <Content Include="bin\EntityFramework.SqlServer.dll" />
@@ -112,6 +113,13 @@
       <DependentUpon>Admin.aspx</DependentUpon>
     </Compile>
     <Content Include="App_Code\ActiveUser.cs" />
+    <Compile Include="AdminUserReport.aspx.cs">
+      <DependentUpon>AdminUserReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminUserReport.aspx.designer.cs">
+      <DependentUpon>AdminUserReport.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Code\ReportGenerator.cs" />
     <Compile Include="App_Code\TimeReport.cs" />
     <Compile Include="App_Code\TimeTableRow.cs" />
