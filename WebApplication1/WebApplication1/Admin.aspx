@@ -5,7 +5,7 @@
 
 	protected void Page_Load(object sender, EventArgs e)
 	{
-
+        getuserDDL(sender, e);
 
 
 	}
@@ -108,7 +108,8 @@
 	
 			<br />
 
-	    <asp:ListBox ID="ViewDataBox" runat="server" Visible="False" Width="387px"></asp:ListBox>
+	    <asp:DropDownList ID="UsersDDL" runat="server">
+            </asp:DropDownList>
 			<br />
 	
 		&nbsp;<br />
@@ -130,7 +131,7 @@
 
         <div id="buttons" runat="server">
 			<br />
-			<asp:Button class="button button2" ID="viewReportsButton" runat="server" Text="View Reports" Width="92px" OnClick="editUsrBttn_Click" Height="51px" style="margin-left: 0px; margin-top: 0px;" />
+			<asp:Button class="button button2" ID="viewReportsButton" runat="server" Text="View Reports" Width="92px" OnClick="viewReportsButton_Click" Height="51px" style="margin-left: 0px; margin-top: 0px;" />
 	
 		&nbsp;&nbsp;&nbsp;&nbsp; <asp:Button class="button button2" ID="editUsrBttn" runat="server" Text="Edit User" Width="92px" OnClick="editUsrBttn_Click" Height="51px" />
 		&nbsp;&nbsp;&nbsp;&nbsp; <asp:Button class="button button2" ID="AddUsrBttn" runat="server" OnClick="Button1_Click" Text="Add User" Height="51px" Width="92px" />

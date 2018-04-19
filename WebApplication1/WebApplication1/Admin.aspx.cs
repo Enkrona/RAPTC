@@ -34,6 +34,33 @@ namespace WebApplication1
             }
         }
 
+        protected void getuserDDL(object sender, EventArgs e)
+        {
+            webtimeclockEntities db = new webtimeclockEntities();
+
+            var uq = from use in db.users
+                     select new { uid = use.UserID, fn = use.FirstName, ln = use.LastName };
+            List<UsersDisp> u = new List<UsersDisp>();
+
+            foreach (var item in uq)
+            {
+                string userid = item.uid;
+                string firstname = item.fn;
+                string lastname = item.ln;
+
+                UsersDisp uta = new UsersDisp(userid, firstname, lastname);
+                u.Add(uta);
+            }
+
+
+            foreach (UsersDisp row in u.AsEnumerable())
+            {
+                string dispstring = row.GetFirstName() + " " + row.GetLastName();
+                string value = row.GetUserID();
+                UsersDDL.Items.Add(new ListItem(dispstring, value));
+            }
+        }
+
         protected void Button4_Click(object sender, EventArgs e)
         {
             
@@ -104,6 +131,48 @@ namespace WebApplication1
             //  Old Message Box Prompt
             //ClientScript.RegisterStartupScript(this.GetType(), "Active Users", "alert('" + test + "');", true);
 
+        }
+
+        protected void genreporttest_Click(object sender, EventArgs e)
+        {
+            string reportuser = UsersDDL.SelectedItem.Value;
+            Session["uid"] = reportuser;
+            Response.Redirect("~/UserReportnon.aspx");
+        }
+
+        internal class UsersDisp
+        {
+            String UserID;
+            String FirstName;
+            String LastName;
+
+            public UsersDisp(String userID, String firstName, String lastName)
+            {
+                this.UserID = userID;
+                this.FirstName = firstName;
+                this.LastName = lastName;
+            }
+
+            public string GetUserID()
+            {
+                return UserID;
+            }
+
+            public string GetFirstName()
+            {
+                return FirstName;
+            }
+
+            public string GetLastName()
+            {
+                return LastName;
+            }
+        }
+
+        protected void viewReportsButton_Click(object sender, EventArgs e)
+        {
+            string reportuser = UsersDDL.SelectedItem.Value;
+            Session["uid"] = reportuser;
         }
     }
 }
