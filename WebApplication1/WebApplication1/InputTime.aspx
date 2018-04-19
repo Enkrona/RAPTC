@@ -39,7 +39,8 @@
             }
             #center {
                 text-align: center;
-                background-color: gold;
+                background-color: #005467;
+                color: white;
             }
             #centercol {
                 text-align:center;
@@ -53,11 +54,17 @@
                 align-items:flex-start;
                 align-self:flex-start;
             }
+            #rightcol {
+                text-align:right;
+                align-content:flex-end;
+                align-items:flex-end;
+                align-self:flex-end;
+            }
             .auto-style1 {
                 width: 107px;
             }
             .button {
-                background-color: #4CAF50;
+                background-color: #006714;
                 border: none;
                 color: white;
                 padding: 15px 32px;
@@ -99,38 +106,73 @@
                 </td>
             </tr>
             <tr>
-                <td id="centercol" style="align-content:center; column-width:300px">
-                    <h7 style="width: 300px; color: white; align-self:center"><script> document.write(new Date().toLocaleDateString()); </script></h7> 
+                <td id="leftcol" style="align-content:center; column-width:300px">
+                    <h2 style="width: 300px; color: white; align-self:center"><script> document.write(new Date().toLocaleDateString()); </script></h2> 
                 </td>
                 <td id="centercol" style="align-content:center; column-width:auto">                    
                     <asp:Button class="button button2" ID="Clock" runat="server" OnClick="Button1_Click" style="z-index: 1; align-self:center" Text="ClockIn" />
                 </td>
             </tr>
+            <tr>
+                <td id="leftcol" style="align-content:center; column-width:300px">
+                    <asp:Button class="button button2" ID="ViewReportBttn" runat="server" OnClick="ViewReportBttn_Click" Text="View Time Report" />
+                </td>
+                <td id="centercol" style="align-content:center; column-width:auto">
+                    <asp:TextBox ID="Comments" runat="server" placeholder="Add a comment..." MaxLength="200" style="z-index: 1;width: 278px"></asp:TextBox>
+                </td>
+            </tr>
         </tbody>
     </table>
-
-            
-            <asp:Button class="button button2" ID="ViewReportBttn" runat="server" OnClick="ViewReportBttn_Click" Text="View Time Report" />
-        <br />
-        <br />
-        <br />
-        <br />
-        <asp:TextBox ID="FCCtxtBx" runat="server" OnTextChanged="FCCtxtBx_TextChanged" Width="230px"></asp:TextBox>
-        <asp:Label ID="WarningText" runat="server" Font-Size="X-Large" ForeColor="Red" Text="Not a Valid FCC Code" Visible="False"></asp:Label>
-        <br />
-        <br />
-        <asp:Button class="button button2" ID="FCCBttn" runat="server" OnClick="FCCBttn_Click" Text="Enter FCC Code" />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Button class="button button2" ID="GoToFCCLogBttn" runat="server" OnClick="GoToFCCLogBttn_Click" Text="Go to FCC Log" />
-        <asp:Label ID="Label1" runat="server" style="z-index: 1; left: 425px; top: 333px; position: absolute" Text="Comments:"></asp:Label>
-        <br />
-        <br />
-        <br />
-        <asp:TextBox ID="Comments" runat="server" MaxLength="200" style="z-index: 1; left: 419px; top: 369px; position: absolute; width: 278px"></asp:TextBox>
-        <br />
-        <br />
-        <asp:Button class="button button2" ID="logoutBttn" runat="server" OnClick="logoutBttn_Click" Text="Logout" />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <table>
+        <colgroup>
+            <col width="300px">
+            <col width="700px" />
+        </colgroup>
+        <tbody>
+            <tr>
+                <td id="leftcol" style="align-content:center; column-width:300px">
+                </td>
+                <td id="leftcol" style="align-content:center; column-width:300px"></td>
+                <td id="rightcol" style="align-content:flex-end; padding-left:5em; column-width:auto">
+                    <asp:Label ID="WarningText" runat="server" Font-Size="X-Large" ForeColor="Red" Text="Not a Valid FCC Code" Visible="False"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td id="leftcol" style="align-content:center; column-width:300px">
+                </td>
+                <td id="leftcol" style="align-content:center; column-width:300px"></td>
+                <td id="rightcol" style="align-content:flex-end; padding-left:5em; column-width:auto">
+                    <asp:TextBox ID="FCCtxtBx" placeholder="Enter Code..." runat="server" OnTextChanged="FCCtxtBx_TextChanged" Width="230px"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td id="leftcol" style="align-content:center; column-width:300px">
+                </td>
+                <td id="leftcol" style="align-content:center; column-width:300px"></td>
+                <td id="rightcol" style="align-content:flex-end; padding-left:5em; column-width:auto">
+                    <asp:Button class="button button2" ID="FCCBttn" runat="server" OnClick="FCCBttn_Click" Text="Enter FCC Code" />
+                </td>
+            </tr>
+            <tr>
+                <td id="leftcol" style="align-content:center; column-width:300px">
+                    <asp:Button class="button button2" ID="logoutBttn" runat="server" OnClick="logoutBttn_Click" Text="Logout" />
+                </td>
+                <td id="leftcol" style="align-content:center; column-width:300px"></td>
+                <td id="rightcol" style="align-content:flex-end; padding-left:15em; column-width:auto">
+                    <asp:Button class="button button2" ID="GoToFCCLogBttn" runat="server" OnClick="GoToFCCLogBttn_Click" Text="Go to FCC Log" />
+                </td>
+            </tr>
+        </tbody>
+    </table>
     </form>
 </body>
 </html>
