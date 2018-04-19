@@ -7,6 +7,7 @@
 	{
         getuserDDL(sender, e);
 
+        getUserRole();
 
 	}
 </script>
@@ -16,38 +17,37 @@
 <head runat="server">
     <title>Admin Page</title>
 	<style type="text/css">
-		#form1 {
-			height: 586px;
-			width: 405px;
-			float: left;
-		}
-		#form2 {
-			width: 1020px;
-			margin-left: 436px;
-			margin-right: 362px;
-			margin-top: 0px;
-			height: 582px;
-			margin-bottom: 3px;
-		}
-		.auto-style1 {
-			height: 25px;
-			font-size: x-large;
-			width: 385px;
-			margin-left: 5px;
-		}
-		
-		.auto-style2 {
-			font-size: xx-large;
-		}
-		
-		#form2 {
-			height: 13px;
-			width: 405px;
-			float: left;
-		}
-		.button {
-                background-color: #4CAF50;
-                border: none;
+        #form1 {
+            height: 524px;
+            width: 962px;
+            float: left;
+            margin-left: 351px;
+        }
+        #form2 {
+            width: 1020px;
+            margin-left: 436px;
+            margin-right: 362px;
+            margin-top: 0px;
+            height: 582px;
+            margin-bottom: 3px;
+        }
+                
+        .auto-style2 {
+            align-content:center;
+            font-size: xx-large;
+        }
+        
+        #form2 {
+            height: 13px;
+            width: 405px;
+            float: left;
+        }
+        .button {  
+                float:unset;
+                border-style: none;
+            border-color: inherit;
+            border-width: medium;
+            background-color: #4CAF50;
                 color: white;
                 border-radius: 8px;
                 padding: 15px 32px;
@@ -55,15 +55,15 @@
                 text-decoration: none;
                 display: inline-block;
                 font-size: 16px;
-                margin: 4px 2px;
+                margin: 4px 2px 4px 5px;
                 cursor: pointer;
                 -webkit-transition-duration: 0.4s; /* Safari */
                 transition-duration: 0.4s;
             }
             .button2:hover {
                 box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-            }   		
-		</style>
+            }           
+        </style>
 </head>
 <body bgcolor="#006747">
     	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -71,7 +71,7 @@
     <form id="form1" runat="server">
         <div>
         	<p class="auto-style1">
-				Generated data table displays students&nbsp; shift date, time, and clockin times.&nbsp;&nbsp; </p>
+				&nbsp;</p>
 			
         </div>
 
@@ -104,7 +104,7 @@
 			<!-- <img src="logo.png" align="right" style="height: 578px; width: 699px; margin-left: 4px; float: left;" /> -->
 		<br />
 	
-			<asp:Label ID="LoggedInUsersLbl" runat="server" Font-Size="Large" Font-Underline="True" ForeColor="Black" Text="Logged in users" Visible="False"></asp:Label>
+			<asp:Label ID="LoggedInUsersLbl" runat="server" Font-Size="Large" Font-Underline="True" ForeColor="Black" Text="All Users" Visible="False"></asp:Label>
 	
 			<br />
 
@@ -131,17 +131,18 @@
 
         <div id="buttons" runat="server">
 			<br />
-			<asp:Button class="button button2" ID="viewReportsButton" runat="server" Text="View Reports" Width="92px" OnClick="viewReportsButton_Click" Height="51px" style="margin-left: 0px; margin-top: 0px;" />
+			&nbsp;<asp:Button class="button button2" ID="viewReportsButton" runat="server" Text="View Reports" Width="169px" OnClick="viewReportsButton_Click" Height="51px" style="margin-left: 0px; margin-top: 0px;" />
 	
-		&nbsp;&nbsp;&nbsp;&nbsp; <asp:Button class="button button2" ID="editUsrBttn" runat="server" Text="Edit User" Width="92px" OnClick="editUsrBttn_Click" Height="51px" />
-		&nbsp;&nbsp;&nbsp;&nbsp; <asp:Button class="button button2" ID="AddUsrBttn" runat="server" OnClick="Button1_Click" Text="Add User" Height="51px" Width="92px" />
+		&nbsp;&nbsp;&nbsp;&nbsp; <asp:Button class="button button2" ID="editUsrBttn" runat="server" Text="Edit User" Width="169px" OnClick="editUsrBttn_Click" Height="51px" />
+		&nbsp;&nbsp;&nbsp;&nbsp; <asp:Button class="button button2" ID="AddUsrBttn" runat="server" OnClick="Button1_Click" Text="Add User" Height="51px" Width="169px" />
 
 			<br />
 			<br />
-        <asp:Button class="button button2" ID="InputTimeBttn" runat="server" OnClick="InputTimeBttn_Click" Text="Input Time" Height="51px" Width="92px" />
+        <asp:Button class="button button2" ID="InputTimeBttn" runat="server" OnClick="InputTimeBttn_Click" Text="Input Time" Height="51px" Width="169px" />
+            &nbsp;&nbsp;&nbsp;&nbsp;<asp:Button class="button button2" ID="ViewActiveUsersBttn" runat="server" OnClick="ViewActiveUsersBttn_Click" Text="View Active Users" Height="51px" Width="206px" />
         <br />
-        <asp:Button class="button button2" ID="ViewActiveUsersBttn" runat="server" OnClick="ViewActiveUsersBttn_Click" Text="View Active Users" Height="51px" Width="120px" />
 			<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Button class="button button2" ID="logoutBttn" runat="server" OnClick="Button4_Click" Text="Logout" />
 
 			<br />

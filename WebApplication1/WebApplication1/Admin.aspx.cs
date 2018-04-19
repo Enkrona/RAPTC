@@ -10,6 +10,7 @@ using System.Data;
 using System.Diagnostics;
 using System.Data.SqlClient;
 using System.Configuration;
+using Cite.DomainAuthentication;
 
 namespace WebApplication1
 {
@@ -32,6 +33,49 @@ namespace WebApplication1
             {
                 Response.Redirect("~/Verify.aspx");
             }
+        }
+
+
+        protected int? getUserRole()
+        {
+            int? role = 0;
+
+            try
+            {
+                webtimeclockEntities db = new webtimeclockEntities();
+
+                String userID = Session["UserID"].ToString().Split(' ')[0];
+                DomainAccount u = new DomainAccount(userID);
+                String activated = Request.Cookies["ApplicationActivated"].Value;
+
+                if (activated != "activated")
+                {
+                    Response.Redirect("~/Verify.aspx", false);
+                }
+
+                role = (from aUser in db.users
+                        where aUser.UserID == userID
+                        select aUser.Role).First();
+
+                if (role == 0)
+                {
+                    Response.Redirect("~/Default.aspx");
+                }
+
+                else if (role == 1)
+                {
+                    AddUsrBttn.Visible = false;
+                    editUsrBttn.Visible = false;
+                }
+
+            }
+
+            catch (Exception ex)
+            {
+                Response.Redirect("~/Verify.aspx");
+            }
+
+            return role;
         }
 
         protected void getuserDDL(object sender, EventArgs e)
