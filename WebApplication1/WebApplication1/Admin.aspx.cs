@@ -126,7 +126,7 @@ namespace WebApplication1
         protected void editUsrBttn_Click(object sender, EventArgs e)
         {
             //Edit User Button
-            Response.Redirect("~/EditUsers.aspx");
+            Response.Redirect("~/EditUser.aspx");
         }
 
         protected void Button1_Click(object sender, EventArgs e)

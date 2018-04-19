@@ -40,15 +40,6 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.DropDownList UsersDDL;
         
         /// <summary>
-        /// buttons control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl buttons;
-        
-        /// <summary>
         /// viewReportsButton control.
         /// </summary>
         /// <remarks>
@@ -56,6 +47,15 @@ namespace WebApplication1 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button viewReportsButton;
+        
+        /// <summary>
+        /// buttons control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl buttons;
         
         /// <summary>
         /// editUsrBttn control.
