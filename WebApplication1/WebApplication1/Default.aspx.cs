@@ -54,6 +54,10 @@ namespace WebApplication1
                 {
                     checkUser = u.Username;
                 }
+                else
+                {
+                    ClientScript.RegisterStartupScript(this.GetType(), "Active Users", "alert('Invalid S#/Password');", true);
+                }
             }
             catch (Exception ex)
             {
@@ -86,7 +90,7 @@ namespace WebApplication1
             }
             catch (Exception ex)
             {
-                
+
             }
 
         }
