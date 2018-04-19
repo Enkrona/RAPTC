@@ -28,6 +28,8 @@
             &nbsp;</p>
         <p>
             <asp:Button ID="Button1" runat="server" Text="Back" OnClick="Button1_Click"/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="RefreshBttn" runat="server" Text="Refresh Users" OnClick="RefreshBttn_Click"/>
         </p>
     </form>
 </body>
